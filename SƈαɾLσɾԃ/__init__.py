@@ -1,11 +1,9 @@
 from Deve import *
+from Booger import *
 from Storeroom import *
-from logging import INFO, basicConfig, getLogger
+
 StartTime = time.time()
-basicConfig(
-format="%(levelname)s - %(message)s",
-level=INFO)
-LOGGER = getLogger(__name__)
+LOGGER = POG
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("SƈαɾLσɾԃ", API_ID, API_HASH)

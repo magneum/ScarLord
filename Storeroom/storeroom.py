@@ -1,3 +1,5 @@
+from loguru import logger
+import logging
 from telegram.error import BadRequest
 from functools import wraps
 import importlib
