@@ -215,7 +215,7 @@
 #         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-# __help__ = """
+# __Hype_More__ = """
 # *Github module. This module will fetch github releases*\n
 # *Available commands:*
 #  • `/git <user>/<repo>`: will fetch the most recent release from that repo.

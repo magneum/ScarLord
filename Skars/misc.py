@@ -75,7 +75,7 @@ def markdown_help(update: Update, context: CallbackContext):
     markdown_help_sender(update)
 
 
-__help__ = """
+__Hype_More__ = """
 *Available commands:*\n
 *Covid:*
  • `/covid <country>`: provides lastest covid information\n

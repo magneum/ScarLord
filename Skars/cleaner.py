@@ -205,7 +205,7 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
     return
 
 
-__help__ = """
+__Hype_More__ = """
 Blue text cleaner removed any made up commands that people send in your chat.
  • `/cleanblue <on/off/yes/no>`*:* clean commands after sending
  • `/ignoreblue <word>`*:* prevent auto cleaning of the command

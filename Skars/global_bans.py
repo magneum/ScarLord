@@ -496,7 +496,7 @@ def __chat_settings__(chat_id, user_id):
     return f"This chat is enforcing *gbans*: `{sql.does_chat_gban(chat_id)}`."
 
 
-__help__ = f"""
+__Hype_More__ = f"""
 *Admins only:*
  • `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 

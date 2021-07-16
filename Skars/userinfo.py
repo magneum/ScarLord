@@ -429,7 +429,7 @@ def __gdpr__(user_id):
     sql.clear_user_bio(user_id)
 
 
-__help__ = """
+__Hype_More__ = """
 *ID:*
  • `/id`*:* get the current group id. If used by replying to a message, gets that user's id.
  • `/gifid`*:* reply to a gif to me to tell you its file ID.

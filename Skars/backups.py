@@ -353,7 +353,7 @@ def get_chat(chat_id, chat_data):
 
 __Hype_Scar_Var__ = "Backups"
 
-__help__ = """
+__Hype_More__ = """
 *Only for group owner:*
 
  • `/import`: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \

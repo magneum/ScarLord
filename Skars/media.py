@@ -1,4 +1,4 @@
-__help__ = """
+__Hype_More__ = """
 *Available commands:*\n
 *Movie information:*
  • `/imdb <movie name>`: does a movie search in Imdb site\n

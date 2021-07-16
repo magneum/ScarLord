@@ -461,7 +461,7 @@ def adminlist(update: Update, context: CallbackContext):
         return
 
 
-__help__ = """
+__Hype_More__ = """
  • `/admins`*:* list of admins in the chat
 
 *Admins only:*

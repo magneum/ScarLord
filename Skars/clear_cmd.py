@@ -102,7 +102,7 @@ def __migrate__(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
-__help__ = """
+__Hype_More__ = """
 *Get module configuration:*
 • `/clearcmd`: provides all commands that has been set in current group with their deletion time
 • `/clearcmd list`: list all available commands for this module

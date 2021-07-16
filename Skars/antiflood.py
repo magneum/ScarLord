@@ -366,7 +366,7 @@ def FLOOD_EDITBTN(update, context):
 """
 
 
-__help__ = "antiflood_help"
+__Hype_More__ = "antiflood_help"
 
 __Hype_Scar_Var__ = "Antiflood"
 

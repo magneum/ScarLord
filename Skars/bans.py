@@ -373,7 +373,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
     return log
 
 
-__help__ = """
+__Hype_More__ = """
  • `/punchme`*:* punchs the user who issued the command
  • `/kickme`*:* same as punchme
 
