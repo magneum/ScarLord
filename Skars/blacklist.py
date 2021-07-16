@@ -437,7 +437,7 @@ def __stats__():
     )
 
 
-__mod_name__ = "Blacklists"
+__Hype_Scar_Var__ = "Blacklists"
 
 __help__ = """
 

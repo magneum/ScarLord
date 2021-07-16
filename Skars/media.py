@@ -12,5 +12,5 @@ __help__ = """
  • `/youtube`, `/yt` `<song or video name>`: download songs or videos from youtube in standar quality
 """
 
-__mod_name__ = "Media"
+__Hype_Scar_Var__ = "Media"
 __command_list__ = ["reverse", "tts", "song", "video"]

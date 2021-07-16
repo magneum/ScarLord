@@ -29,11 +29,11 @@ def load(update: Update, context: CallbackContext):
         load_messasge.edit_text("Does that module even exist?")
         return
 
-    if not hasattr(imported_module, "__mod_name__"):
-        imported_module.__mod_name__ = imported_module.__name__
+    if not hasattr(imported_module, "__Hype_Scar_Var__"):
+        imported_module.__Hype_Scar_Var__ = imported_module.__name__
 
-    if imported_module.__mod_name__.lower() not in IMPORTED:
-        IMPORTED[imported_module.__mod_name__.lower()] = imported_module
+    if imported_module.__Hype_Scar_Var__.lower() not in IMPORTED:
+        IMPORTED[imported_module.__Hype_Scar_Var__.lower()] = imported_module
     else:
         load_messasge.edit_text("Module already loaded.")
         return
@@ -46,12 +46,12 @@ def load(update: Update, context: CallbackContext):
                 handler_name, priority = handler
                 dispatcher.add_handler(handler_name, priority)
     else:
-        IMPORTED.pop(imported_module.__mod_name__.lower())
+        IMPORTED.pop(imported_module.__Hype_Scar_Var__.lower())
         load_messasge.edit_text("The module cannot be loaded.")
         return
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
-        HELPABLE[imported_module.__mod_name__.lower()] = imported_module
+        HELPABLE[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
     if hasattr(imported_module, "__migrate__"):
@@ -73,10 +73,10 @@ def load(update: Update, context: CallbackContext):
         DATA_EXPORT.append(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        CHAT_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        USER_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     load_messasge.edit_text(
         "Successfully loaded module : <b>{}</b>".format(text), parse_mode=ParseMode.HTML
@@ -97,10 +97,10 @@ def unload(update: Update, context: CallbackContext):
         unload_messasge.edit_text("Does that module even exist?")
         return
 
-    if not hasattr(imported_module, "__mod_name__"):
-        imported_module.__mod_name__ = imported_module.__name__
-    if imported_module.__mod_name__.lower() in IMPORTED:
-        IMPORTED.pop(imported_module.__mod_name__.lower())
+    if not hasattr(imported_module, "__Hype_Scar_Var__"):
+        imported_module.__Hype_Scar_Var__ = imported_module.__name__
+    if imported_module.__Hype_Scar_Var__.lower() in IMPORTED:
+        IMPORTED.pop(imported_module.__Hype_Scar_Var__.lower())
     else:
         unload_messasge.edit_text("Can't unload something that isn't loaded.")
         return
@@ -120,7 +120,7 @@ def unload(update: Update, context: CallbackContext):
         return
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
-        HELPABLE.pop(imported_module.__mod_name__.lower())
+        HELPABLE.pop(imported_module.__Hype_Scar_Var__.lower())
 
     # Chats to migrate on chat_migrated events
     if hasattr(imported_module, "__migrate__"):
@@ -142,10 +142,10 @@ def unload(update: Update, context: CallbackContext):
         DATA_EXPORT.remove(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS.pop(imported_module.__mod_name__.lower())
+        CHAT_SETTINGS.pop(imported_module.__Hype_Scar_Var__.lower())
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS.pop(imported_module.__mod_name__.lower())
+        USER_SETTINGS.pop(imported_module.__Hype_Scar_Var__.lower())
 
     unload_messasge.edit_text(
         f"Successfully unloaded module : <b>{text}</b>", parse_mode=ParseMode.HTML
@@ -159,9 +159,9 @@ def listmodules(update: Update, context: CallbackContext):
 
     for helpable_module in HELPABLE:
         helpable_module_info = IMPORTED[helpable_module]
-        file_info = IMPORTED[helpable_module_info.__mod_name__.lower()]
+        file_info = IMPORTED[helpable_module_info.__Hype_Scar_Var__.lower()]
         file_name = file_info.__name__.rsplit("SƈαɾLσɾԃ.Skars.", 1)[1]
-        mod_name = file_info.__mod_name__
+        mod_name = file_info.__Hype_Scar_Var__
         module_list.append(f"- <code>{mod_name} ({file_name})</code>\n")
     module_list = "Following Skars are loaded : \n\n" + "".join(module_list)
     message.reply_text(module_list, parse_mode=ParseMode.HTML)
@@ -175,4 +175,4 @@ dispatcher.add_handler(LOAD_HANDLER)
 dispatcher.add_handler(UNLOAD_HANDLER)
 dispatcher.add_handler(LISTMODULES_HANDLER)
 
-__mod_name__ = "Modules"
+__Hype_Scar_Var__ = "Modules"

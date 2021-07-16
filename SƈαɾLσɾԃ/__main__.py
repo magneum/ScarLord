@@ -74,16 +74,16 @@ GDPR = []
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("Skars." + module_name)
-    if not hasattr(imported_module, "__mod_name__"):
-        imported_module.__mod_name__ = imported_module.__name__
+    if not hasattr(imported_module, "__Hype_Scar_Var__"):
+        imported_module.__Hype_Scar_Var__ = imported_module.__name__
 
-    if imported_module.__mod_name__.lower() not in IMPORTED:
-        IMPORTED[imported_module.__mod_name__.lower()] = imported_module
+    if imported_module.__Hype_Scar_Var__.lower() not in IMPORTED:
+        IMPORTED[imported_module.__Hype_Scar_Var__.lower()] = imported_module
     else:
         raise Exception("Can't have two Skars with the same name! Please change one")
 
     if hasattr(imported_module, "__help__") and imported_module.__help__:
-        HELPABLE[imported_module.__mod_name__.lower()] = imported_module
+        HELPABLE[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
     if hasattr(imported_module, "__migrate__"):
@@ -105,10 +105,10 @@ for module_name in ALL_MODULES:
         DATA_EXPORT.append(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        CHAT_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        USER_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
 
 # do not async
@@ -263,7 +263,7 @@ def help_button(update: Update, context: CallbackContext):
             module = mod_match.group(1)
             text = (
                 "Here is the help for the *{}* module:\n".format(
-                    HELPABLE[module].__mod_name__
+                    HELPABLE[module].__Hype_Scar_Var__
                 )
                 + HELPABLE[module].__help__
             )
@@ -356,7 +356,7 @@ def get_help(update: Update, context: CallbackContext):
         module = args[1].lower()
         text = (
             "Here is the available help for the *{}* module:\n".format(
-                HELPABLE[module].__mod_name__
+                HELPABLE[module].__Hype_Scar_Var__
             )
             + HELPABLE[module].__help__
         )
@@ -376,7 +376,7 @@ def send_settings(chat_id, user_id, user=False):
     if user:
         if USER_SETTINGS:
             settings = "\n\n".join(
-                "*{}*:\n{}".format(mod.__mod_name__, mod.__user_settings__(user_id))
+                "*{}*:\n{}".format(mod.__Hype_Scar_Var__, mod.__user_settings__(user_id))
                 for mod in USER_SETTINGS.values()
             )
             dispatcher.bot.send_message(
@@ -427,7 +427,7 @@ def settings_button(update: Update, context: CallbackContext):
             module = mod_match.group(2)
             chat = bot.get_chat(chat_id)
             text = "*{}* has the following settings for the *{}* module:\n\n".format(
-                escape_markdown(chat.title), CHAT_SETTINGS[module].__mod_name__
+                escape_markdown(chat.title), CHAT_SETTINGS[module].__Hype_Scar_Var__
             ) + CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
             query.message.reply_text(
                 text=text,

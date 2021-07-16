@@ -120,6 +120,6 @@ CLEARCMD_HANDLER = CommandHandler("clearcmd", clearcmd, run_async=True)
 
 dispatcher.add_handler(CLEARCMD_HANDLER)
 
-__mod_name__ = "Clear Commands"
+__Hype_Scar_Var__ = "Clear Commands"
 __command_list__ = ["clearcmd"]
 __handlers__ = [CLEARCMD_HANDLER]

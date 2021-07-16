@@ -2,7 +2,7 @@ from Storeroom import *
 from SƈαɾLσɾԃ import LOGGER, dispatcher
 from Bytes.chat_status import user_admin, can_delete
 
-__mod_name__ = "🧴 ᴘᴜʀɢᴇ"
+__Hype_Scar_Var__ = "🧴 ᴘᴜʀɢᴇ"
 
 run_async
 @user_admin

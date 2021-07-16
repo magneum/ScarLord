@@ -114,7 +114,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help, run_async=True)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "Extras"
+__Hype_Scar_Var__ = "Extras"
 __command_list__ = ["id", "echo", "covid", "weather", "quotly"]
 __handlers__ = [
     ECHO_HANDLER,

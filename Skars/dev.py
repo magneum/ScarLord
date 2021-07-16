@@ -46,5 +46,5 @@ ALLOWGROUPS_HANDLER = CommandHandler("lockdown", allow_groups, run_async=True)
 dispatcher.add_handler(ALLOWGROUPS_HANDLER)
 dispatcher.add_handler(LEAVE_HANDLER)
 
-__mod_name__ = "Dev"
+__Hype_Scar_Var__ = "Dev"
 __handlers__ = [LEAVE_HANDLER, ALLOWGROUPS_HANDLER]

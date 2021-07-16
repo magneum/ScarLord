@@ -368,7 +368,7 @@ def FLOOD_EDITBTN(update, context):
 
 __help__ = "antiflood_help"
 
-__mod_name__ = "Antiflood"
+__Hype_Scar_Var__ = "Antiflood"
 
 FLOOD_BAN_HANDLER = MessageHandler(Filters.all & ~Filters.status_update & Filters.chat_type.groups, check_flood)
 SET_FLOOD_HANDLER = CommandHandler("setflood", set_flood, pass_args=True, filters=Filters.chat_type.groups)

@@ -230,7 +230,7 @@
 #  • `/delrepo <name>`: deletes a repo shortcut
 # """
 
-# __mod_name__ = "GitHub"
+# __Hype_Scar_Var__ = "GitHub"
 
 
 # RELEASE_HANDLER = DisableAbleCommandHandler(
