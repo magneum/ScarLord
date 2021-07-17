@@ -236,7 +236,7 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
 
 
 from MoreInfos import *
-__Hype_More__ = MUTE
+__help__ = MUTE
 
 MUTE_HANDLER = CommandHandler("mute", mute, run_async=True)
 UNMUTE_HANDLER = CommandHandler("unmute", unmute, run_async=True)

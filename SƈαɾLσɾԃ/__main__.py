@@ -82,7 +82,7 @@ for module_name in ALL_MODULES:
     else:
         raise Exception("Can't have two Skars with the same name! Please change one")
 
-    if hasattr(imported_module, "__Hype_More__") and imported_module.__Hype_More__:
+    if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
@@ -144,7 +144,7 @@ def start(update: Update, context: CallbackContext):
                     return
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].__Hype_More__,
+                    HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                     ),
@@ -265,7 +265,7 @@ def help_button(update: Update, context: CallbackContext):
                 "Here is the help for the *{}* module:\n".format(
                     HELPABLE[module].__Hype_Scar_Var__
                 )
-                + HELPABLE[module].__Hype_More__
+                + HELPABLE[module].__help__
             )
             query.message.edit_text(
                 text=text,
@@ -358,7 +358,7 @@ def get_help(update: Update, context: CallbackContext):
             "Here is the available help for the *{}* module:\n".format(
                 HELPABLE[module].__Hype_Scar_Var__
             )
-            + HELPABLE[module].__Hype_More__
+            + HELPABLE[module].__help__
         )
         send_help(
             chat.id,

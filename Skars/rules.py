@@ -117,7 +117,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 from MoreInfos import *
-__Hype_More__ = RULES
+__help__ = RULES
 
 __Hype_Scar_Var__ = "Rules"
 

@@ -103,7 +103,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 from MoreInfos import *
-__Hype_More__ = CLEAR
+__help__ = CLEAR
 
 CLEARCMD_HANDLER = CommandHandler("clearcmd", clearcmd, run_async=True)
 

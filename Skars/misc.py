@@ -55,7 +55,7 @@ def markdown_help(update: Update, context: CallbackContext):
     markdown_help_sender(update)
 
 
-__Hype_More__ = MISC
+__help__ = MISC
 
 ECHO_HANDLER = DisableAbleCommandHandler("echo", echo, filters=Filters.chat_type.groups, run_async=True)
 MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help, run_async=True)

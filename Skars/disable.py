@@ -322,7 +322,7 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(TOGGLE_HANDLER)
 
     from MoreInfos import *
-    __Hype_More__ = DISABLE
+    __help__ = DISABLE
 
     __Hype_Scar_Var__ = "Disable Module"
 

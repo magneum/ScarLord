@@ -1057,7 +1057,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 from MoreInfos import *
-__Hype_More__ = WELCOME
+__help__ = WELCOME
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member, run_async=True)
 LEFT_MEM_HANDLER = MessageHandler(Filters.status_update.left_chat_member, left_member, run_async=True)

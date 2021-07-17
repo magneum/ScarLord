@@ -435,7 +435,7 @@ def makepack_internal(
 
 
 from MoreInfos import *
-__Hype_More__ = STICKERS
+__help__ = STICKERS
 
 __Hype_Scar_Var__ = "Stickers"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)

@@ -111,7 +111,7 @@ def sed(update: Update, context: CallbackContext):
 
 
 from MoreInfos import *
-__Hype_More__ = SED
+__help__ = SED
 
 __Hype_Scar_Var__ = "Sed/Regex"
 

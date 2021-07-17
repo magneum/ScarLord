@@ -162,7 +162,7 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 from MoreInfos import *
-__Hype_More__ = USERS  # no help string
+__help__ = USERS  # no help string
 
 BROADCAST_HANDLER = CommandHandler(
     ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast, run_async=True

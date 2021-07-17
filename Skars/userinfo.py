@@ -430,7 +430,7 @@ def __gdpr__(user_id):
 
 
 from MoreInfos import *
-__Hype_More__ = USER_INFO
+__help__ = USER_INFO
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
 GET_BIO_HANDLER = DisableAbleCommandHandler("bio", about_bio)

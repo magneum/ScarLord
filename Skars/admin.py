@@ -460,7 +460,7 @@ def adminlist(update: Update, context: CallbackContext):
         return
 
 from MoreInfos import *
-__Hype_More__ = ADMIN
+__help__ = ADMIN
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
 

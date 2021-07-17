@@ -189,7 +189,7 @@ def unapproveall_btn(update: Update, context: CallbackContext):
 
 
 from MoreInfos import *
-__Hype_More__ = APPROVE
+__help__ = APPROVE
 
 APPROVE = DisableAbleCommandHandler("approve", approve, run_async=True)
 DISAPPROVE = DisableAbleCommandHandler("unapprove", disapprove, run_async=True)

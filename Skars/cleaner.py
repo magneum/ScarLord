@@ -206,7 +206,7 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
 
 
 from MoreInfos import *
-__Hype_More__ = CLEANER
+__help__ = CLEANER
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click, run_async=True)
 ADD_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("ignoreblue", add_bluetext_ignore, run_async=True)

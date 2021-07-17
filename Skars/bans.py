@@ -374,7 +374,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
 
 from MoreInfos import *
-__Hype_More__ = BANS
+__help__ = BANS
 
 BAN_HANDLER = DisableAbleCommandHandler(["ban", "sban"], ban, run_async=True)
 TEMPBAN_HANDLER = DisableAbleCommandHandler("tban", temp_ban, run_async=True)

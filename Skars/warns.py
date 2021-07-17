@@ -451,7 +451,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 from MoreInfos import *
-__Hype_More__ = WARNS
+__help__ = WARNS
 
 __Hype_Scar_Var__ = "Warnings"
 

@@ -547,7 +547,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 from MoreInfos import *
-__Hype_More__ = LOCKS
+__help__ = LOCKS
 
 __Hype_Scar_Var__ = "Locks"
 

@@ -300,7 +300,7 @@ def deletion(update: Update, context: CallbackContext, delmsg):
 
 
 from MoreInfos import *
-__Hype_More__ = FUN
+__help__ = FUN
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs, run_async=True)

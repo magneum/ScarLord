@@ -50,7 +50,7 @@ def load(update: Update, context: CallbackContext):
         load_messasge.edit_text("The module cannot be loaded.")
         return
 
-    if hasattr(imported_module, "__Hype_More__") and imported_module.__Hype_More__:
+    if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
@@ -119,7 +119,7 @@ def unload(update: Update, context: CallbackContext):
         unload_messasge.edit_text("The module cannot be unloaded.")
         return
 
-    if hasattr(imported_module, "__Hype_More__") and imported_module.__Hype_More__:
+    if hasattr(imported_module, "__help__") and imported_module.__help__:
         HELPABLE.pop(imported_module.__Hype_Scar_Var__.lower())
 
     # Chats to migrate on chat_migrated events

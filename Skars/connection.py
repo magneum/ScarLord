@@ -374,7 +374,7 @@ def connect_button(update: Update, context: CallbackContext):
 __Hype_Scar_Var__ = "Connection"
 
 from MoreInfos import *
-__Hype_More__ = CONNECTION
+__help__ = CONNECTION
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, run_async=True)
 CONNECTION_CHAT_HANDLER = CommandHandler("connection", connection_chat, run_async=True)

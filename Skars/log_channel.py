@@ -188,7 +188,7 @@ if is_module_loaded(FILENAME):
         return "No log channel is set for this group!"
 
     from MoreInfos import *
-    __Hype_More__ = LOCKS
+    __help__ = LOCKS
 
     __Hype_Scar_Var__ = "Log Channels"
 

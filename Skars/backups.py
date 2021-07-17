@@ -354,7 +354,7 @@ def get_chat(chat_id, chat_data):
 __Hype_Scar_Var__ = "Backups"
 
 from MoreInfos import *
-__Hype_More__ = BACKUPS
+__help__ = BACKUPS
 
 
 IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)

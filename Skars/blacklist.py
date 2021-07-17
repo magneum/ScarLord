@@ -440,7 +440,7 @@ def __stats__():
 __Hype_Scar_Var__ = "Blacklists"
 
 from MoreInfos import *
-__Hype_More__ = BLACKLIST
+__help__ = BLACKLIST
 
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(

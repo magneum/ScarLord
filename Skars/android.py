@@ -298,7 +298,7 @@
 #         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-# __Hype_More__ = """
+# __help__ = """
 # *Available commands:*\n
 # *Magisk:* 
 # • `/magisk`, `/su`, `/root`: fetches latest magisk\n
