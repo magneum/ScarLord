@@ -1,1 +1,0 @@
-ANTIFLOOD = "antiflood_help"
