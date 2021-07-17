@@ -7,7 +7,8 @@ from SƈαɾLσɾԃ import (
     dispatcher,
     sw,
 )
-from SƈαɾLσɾԃ.__main__ import STATS, GDPR, TOKEN, USER_INFO
+from Konf import *
+from SƈαɾLσɾԃ.__main__ import STATS, GDPR, USER_INFO
 import Database.userinfo_sql as sql
 from Skars.disable import DisableAbleCommandHandler
 from Database.global_bans_sql import is_user_gbanned
@@ -207,7 +208,7 @@ def info(update: Update, context: CallbackContext):
         user_member = chat.get_member(user.id)
         if user_member.status == "administrator":
             result = requests.post(
-                f"https://api.telegram.org/bot{TOKEN}/getChatMember?chat_id={chat.id}&user_id={user.id}"
+                f"https://api.telegram.org/bot{Config.TOKEN}/getChatMember?chat_id={chat.id}&user_id={user.id}"
             )
             result = result.json()["result"]
             if "custom_title" in result.keys():

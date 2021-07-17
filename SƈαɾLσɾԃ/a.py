@@ -1,39 +1,17 @@
-import importlib
-import time
-import re
-from sys import argv
-from typing import Optional
-
-from SƈαɾLσɾԃ import (
-    LOGGER,
-    dispatcher,
-    StartTime,
-    updater,
-)
-
-# needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
-from Skars import ALL_MODULES
+from Deve import *
+from Storeroom import *
 from Bytes.chat_status import is_user_admin
 from Bytes.misc import paginate_modules
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.error import (
-    BadRequest,
-    ChatMigrated,
-    NetworkError,
-    TelegramError,
-    TimedOut,
-    Unauthorized,
+from SƈαɾLσɾԃ import (
+    LOGGER,
+    TOKEN,
+    dispatcher,
+    StartTime,
+    telethn,
+    updater,
 )
-from telegram.ext import (
-    CallbackContext,
-    CallbackQueryHandler,
-    CommandHandler,
-    Filters,
-    MessageHandler,
-)
-from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
-from telegram.utils.helpers import escape_markdown
+from Skars import ALL_MODULES
+
 
 
 def get_readable_time(seconds: int) -> str:
@@ -69,23 +47,18 @@ You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
+Hey there! My name is *{}*.
 I'm a modular group management bot and help admins to manage their groups. Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
  • /settings:
-   • in PM: will send you your settings for all supported modules.
+   • in PM: will send you your settings for all supported Skars.
    • in a group: will redirect you to pm, with all that chat's settings.
 """
-ASTRAKOBOT_IMG = "https://i.imgur.com/1oah5E2.jpg"
-
-DONATE_STRING = """Heya, glad to hear you want to donate!
-AstrakoBot is hosted on its own server and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+SƈαɾLσɾԃ_IMG = "https://telegra.ph/file/940ca89d9dd888db58ec6.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -104,13 +77,13 @@ for module_name in ALL_MODULES:
     if not hasattr(imported_module, "__Hype_Scar_Var__"):
         imported_module.__Hype_Scar_Var__ = imported_module.__name__
 
-    if imported_module.__Hype_Scar_Var__.upper() not in IMPORTED:
-        IMPORTED[imported_module.__Hype_Scar_Var__.upper()] = imported_module
+    if imported_module.__Hype_Scar_Var__.lower() not in IMPORTED:
+        IMPORTED[imported_module.__Hype_Scar_Var__.lower()] = imported_module
     else:
-        raise Exception("Can't have two modules with the same name! Please change one")
+        raise Exception("Can't have two Skars with the same name! Please change one")
 
-    if hasattr(imported_module, "__help__") and imported_module.__help__:
-        HELPABLE[imported_module.__Hype_Scar_Var__.upper()] = imported_module
+    if hasattr(imported_module, "__Hype_More__") and imported_module.__Hype_More__:
+        HELPABLE[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     # Chats to migrate on chat_migrated events
     if hasattr(imported_module, "__migrate__"):
@@ -132,10 +105,10 @@ for module_name in ALL_MODULES:
         DATA_EXPORT.append(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__Hype_Scar_Var__.upper()] = imported_module
+        CHAT_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__Hype_Scar_Var__.upper()] = imported_module
+        USER_SETTINGS[imported_module.__Hype_Scar_Var__.lower()] = imported_module
 
 
 # do not async
@@ -163,25 +136,25 @@ def start(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
     if update.effective_chat.type == "private":
         if len(args) >= 1:
-            if args[0].upper() == "help":
+            if args[0].lower() == "help":
                 send_help(update.effective_chat.id, HELP_STRINGS)
-            elif args[0].upper().startswith("ghelp_"):
-                mod = args[0].upper().split("_", 1)[1]
+            elif args[0].lower().startswith("ghelp_"):
+                mod = args[0].lower().split("_", 1)[1]
                 if not HELPABLE.get(mod, False):
                     return
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].__help__,
+                    HELPABLE[mod].__Hype_More__,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
                     ),
                 )
-            elif args[0].upper() == "markdownhelp":
+            elif args[0].lower() == "markdownhelp":
                 IMPORTED["extras"].markdown_help_sender(update)
-            elif args[0].upper() == "super_users":
+            elif args[0].lower() == "super_users":
                 IMPORTED["super_users"].send_super_users(update)
-            elif args[0].upper().startswith("stngs_"):
-                match = re.match("stngs_(.*)", args[0].upper())
+            elif args[0].lower().startswith("stngs_"):
+                match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
 
                 if is_user_admin(chat, update.effective_user.id):
@@ -195,7 +168,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                ASTRAKOBOT_IMG,
+                SƈαɾLσɾԃ_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name), escape_markdown(context.bot.first_name)
                 ),
@@ -204,7 +177,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add AstrakoBot to your group",
+                                text="Add SƈαɾLσɾԃ to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -213,7 +186,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Support Group",
-                                url=f"https://t.me/AstrakoBotSupport",
+                                url=f"https://t.me/SƈαɾLσɾԃSupport",
                             ),
                         ],
                         [
@@ -225,7 +198,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Source code",
-                                url="https://github.com/Astrako/AstrakoBot",
+                                url="https://github.com/Astrako/SƈαɾLσɾԃ",
                             )
                         ],
                         [
@@ -292,7 +265,7 @@ def help_button(update: Update, context: CallbackContext):
                 "Here is the help for the *{}* module:\n".format(
                     HELPABLE[module].__Hype_Scar_Var__
                 )
-                + HELPABLE[module].__help__
+                + HELPABLE[module].__Hype_More__
             )
             query.message.edit_text(
                 text=text,
@@ -341,13 +314,13 @@ def help_button(update: Update, context: CallbackContext):
 
 
 def get_help(update: Update, context: CallbackContext):
-    chat = update.effective_chat 
+    chat = update.effective_chat  
     args = update.effective_message.text.split(None, 1)
 
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
-        if len(args) >= 2 and any(args[1].upper() == x for x in HELPABLE):
-            module = args[1].upper()
+        if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
+            module = args[1].lower()
             update.effective_message.reply_text(
                 f"Contact me in PM to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
@@ -379,13 +352,13 @@ def get_help(update: Update, context: CallbackContext):
         )
         return
 
-    elif len(args) >= 2 and any(args[1].upper() == x for x in HELPABLE):
-        module = args[1].upper()
+    elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
+        module = args[1].lower()
         text = (
             "Here is the available help for the *{}* module:\n".format(
                 HELPABLE[module].__Hype_Scar_Var__
             )
-            + HELPABLE[module].__help__
+            + HELPABLE[module].__Hype_More__
         )
         send_help(
             chat.id,
@@ -524,10 +497,9 @@ def settings_button(update: Update, context: CallbackContext):
 
 
 def get_settings(update: Update, context: CallbackContext):
-    chat = update.effective_chat  
-    user = update.effective_user 
-    msg = update.effective_message  
-
+    chat = update.effective_chat 
+    user = update.effective_user  
+    msg = update.effective_message 
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
@@ -535,21 +507,14 @@ def get_settings(update: Update, context: CallbackContext):
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="Settings",
-                                url="t.me/{}?start=stngs_{}".format(
-                                    context.bot.username, chat.id
-                                ),
-                            )
-                        ]
-                    ]
-                ),
-            )
+                    [[
+                        InlineKeyboardButton(
+                        text="Settings",
+                        url="t.me/{}?start=stngs_{}".format(context.bot.username, chat.id),)
+                    ]]
+                    ))
         else:
             text = "Click here to check your settings."
-
     else:
         send_settings(chat.id, user.id, True)
 
@@ -591,10 +556,13 @@ def main():
     dispatcher.add_error_handler(error_callback)
 
 
+    LOGGER.info("Using long polling.")
     updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
+    telethn.run_until_disconnected()
     updater.idle()
 
 
 if __name__ == "__main__":
-    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
+    LOGGER.info("Successfully loaded Skars: " + str(ALL_MODULES))
+    telethn.start(bot_token=TOKEN)
     main()
