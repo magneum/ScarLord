@@ -1,4 +1,4 @@
-__Hype_More__ = """
+FILTERS = __Hype_More__ = """
  • `/filters`*:* List all active filters saved in the chat.
 
 *Admin only:*

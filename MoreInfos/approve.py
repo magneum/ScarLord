@@ -1,4 +1,4 @@
-__Hype_More__ = """
+APPROVE = __Hype_More__ = """
 Sometimes, you might trust a user not to send unwanted content.
 Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.
 

@@ -1,4 +1,4 @@
-__Hype_More__ = """
+LOCKS = __Hype_More__ = """
 Do stickers annoy you? or want to avoid people sharing links? or pictures? \
 You're in the right place!
 The locks module allows you to lock away some common items in the \

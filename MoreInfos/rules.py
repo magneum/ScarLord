@@ -1,4 +1,4 @@
-__Hype_More__ = """
+RULES = __Hype_More__ = """
  • `/rules`*:* get the rules for this chat.
 
 *Admins only:*

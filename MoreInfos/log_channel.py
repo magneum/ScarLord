@@ -1,4 +1,4 @@
-    __Hype_More__ = """
+LOG = __Hype_More__ = """
 *Admins only:*
 • `/logchannel`*:* get log channel info
 • `/setlog`*:* set the log channel.

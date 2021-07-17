@@ -1,4 +1,4 @@
-__Hype_More__ = """
+NOTES = __Hype_More__ = """
  • `/get <notename>`*:* get the note with this notename
  • `#<notename>`*:* same as /get
  • `/notes` or `/saved`*:* list all saved notes in this chat

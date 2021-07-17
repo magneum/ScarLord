@@ -1,1 +1,1 @@
-__Hype_More__ = "antiflood_help"
+ANTIFLOOD = __Hype_More__ = "antiflood_help"

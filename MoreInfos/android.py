@@ -1,4 +1,4 @@
-__Hype_More__ = """
+ANDROID = __Hype_More__ = """
 *Available commands:*\n
 *Magisk:* 
 • `/magisk`, `/su`, `/root`: fetches latest magisk\n

@@ -1,4 +1,4 @@
-__Hype_More__ = """
+CLEAR = __Hype_More__ = """
 *Get module configuration:*
 • `/clearcmd`: provides all commands that has been set in current group with their deletion time
 • `/clearcmd list`: list all available commands for this module

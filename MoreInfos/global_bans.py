@@ -1,4 +1,4 @@
-__Hype_More__ = f"""
+GBAN = __Hype_More__ = f"""
 *Admins only:*
  • `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 
