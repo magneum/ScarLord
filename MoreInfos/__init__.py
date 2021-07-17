@@ -22,5 +22,6 @@ from .rules import *
 from .sed import *
 from .stickers import *
 from .userinfo import *
+from .users import *
 from .warns import *
 from .welcome import *

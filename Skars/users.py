@@ -161,7 +161,8 @@ def __migrate__(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
-__Hype_More__ = ""  # no help string
+from MoreInfos import *
+__Hype_More__ = USERS  # no help string
 
 BROADCAST_HANDLER = CommandHandler(
     ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast, run_async=True

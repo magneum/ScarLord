@@ -353,15 +353,9 @@ def get_chat(chat_id, chat_data):
 
 __Hype_Scar_Var__ = "Backups"
 
-__Hype_More__ = """
-*Only for group owner:*
+from MoreInfos import *
+__Hype_More__ = BACKUPS
 
- • `/import`: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
- Note that files / photos cannot be imported due to telegram restrictions.
-
- • `/export`: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
-
-"""
 
 IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)
 EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True, run_async=True)

@@ -235,12 +235,8 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
     return ""
 
 
-__Hype_More__ = """
-*Admins only:*
- • `/mute <userhandle> <reason>(optional)`*:* silences a user. Can also be used as a reply, muting the replied to user.
- • `/tmute <userhandle> x(m/h/d) <reason>(optional)`*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- • `/unmute <userhandle>`*:* unmutes a user. Can also be used as a reply, muting the replied to user.
-"""
+from MoreInfos import *
+__Hype_More__ = MUTE
 
 MUTE_HANDLER = CommandHandler("mute", mute, run_async=True)
 UNMUTE_HANDLER = CommandHandler("unmute", unmute, run_async=True)
