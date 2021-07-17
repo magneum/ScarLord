@@ -1,4 +1,4 @@
-REPORT = __Hype_More__ = """
+REPORT =  """
  • `/report <reason>`*:* reply to a message to report it to admins.
  • `@admin`*:* reply to a message to report it to admins.
 *NOTE:* Neither of these will get triggered if used by admins.

@@ -1,4 +1,4 @@
-USERINFO  = __Hype_More__ = """
+USERINFO  =  """
 *ID:*
  • `/id`*:* get the current group id. If used by replying to a message, gets that user's id.
  • `/gifid`*:* reply to a gif to me to tell you its file ID.

@@ -1,4 +1,4 @@
-ADMIN = __Hype_More__ = """
+ADMIN = """
  • `/admins`*:* list of admins in the chat
 
 *Admins only:*

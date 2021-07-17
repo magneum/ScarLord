@@ -1,4 +1,4 @@
-WELCOME = __Hype_More__ = """
+WELCOME =  """
 *Admins only:*
  • `/welcome <on/off>`*:* enable/disable welcome messages.
  • `/welcome`*:* shows current welcome settings.

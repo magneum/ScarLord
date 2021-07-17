@@ -1,4 +1,4 @@
-WARNS = __Hype_More__ = """
+WARNS =  """
  • `/warns <userhandle>`*:* get a user's number, and reason, of warns.
  • `/warnlist`*:* list of all current warning filters
 

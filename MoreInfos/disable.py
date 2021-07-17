@@ -1,4 +1,4 @@
-DISABLE = __Hype_More__ = """
+DISABLE =  """
 • `/cmds`*:* check the current status of disabled commands
 
 *Admins only:*

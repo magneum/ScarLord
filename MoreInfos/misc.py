@@ -1,4 +1,4 @@
-MISC = __Hype_More__ = """
+MISC =  """
 *Available commands:*\n
 *Covid:*
  • `/covid <country>`: provides lastest covid information\n
@@ -31,7 +31,7 @@ Output: `1.0 USD = 75.505 INR`\n
 • 🕐 [Timezones list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 """
 
-MDHELP = MARKDOWN_HELP = f"""
+MDHELP = f"""
 Markdown is a very powerful formatting tool supported by telegram. SƈαɾLσɾԃ has some enhancements, to make sure that \
 saved messages are correctly parsed, and to allow you to create buttons.
 

@@ -1,4 +1,4 @@
-BANS = __Hype_More__ = """
+BANS =  """
  • `/punchme`*:* punchs the user who issued the command
  • `/kickme`*:* same as punchme
 
