@@ -1,4 +1,5 @@
 from Import import *
+from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
@@ -42,3 +43,9 @@ def lyrics(update: Update, context: CallbackContext):
 LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics, run_async=True)
 
 dispatcher.add_handler(LYRICS_HANDLER)
+
+
+__help__ = f"""{ALKL}
+*Lyrics:*
+ • `/lyrics <song name>`: does a lyric search for a given song name\n
+"""

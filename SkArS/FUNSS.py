@@ -1,5 +1,5 @@
 from Import import *
-import SkArS.fun_strings as fun_strings
+import SkArS.FUNST as FUNST
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import is_user_admin
@@ -11,7 +11,7 @@ GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr
 
 
 def runs(update: Update, context: CallbackContext):
-    deletion(update, context, update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS)))
+    deletion(update, context, update.effective_message.reply_text(random.choice(FUNST.RUN_STRINGS)))
 
 
 def sanitize(update: Update, context: CallbackContext):
@@ -26,7 +26,7 @@ def sanitize(update: Update, context: CallbackContext):
         if message.reply_to_message
         else message.reply_animation
     )
-    deletion(update, context, reply_animation(random.choice(fun_strings.GIFS), caption=f"*Sanitizes {name}*"))
+    deletion(update, context, reply_animation(random.choice(FUNST.GIFS), caption=f"*Sanitizes {name}*"))
 
 
 def slap(update: Update, context: CallbackContext):
@@ -44,7 +44,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_SAITAMA_TEMPLATES)
+        temp = random.choice(FUNST.SLAP_SAITAMA_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -74,10 +74,10 @@ def slap(update: Update, context: CallbackContext):
         user1 = bot.first_name
         user2 = curr_user
 
-    temp = random.choice(fun_strings.SLAP_TEMPLATES)
-    item = random.choice(fun_strings.ITEMS)
-    hit = random.choice(fun_strings.HIT)
-    throw = random.choice(fun_strings.THROW)
+    temp = random.choice(FUNST.SLAP_TEMPLATES)
+    item = random.choice(FUNST.ITEMS)
+    hit = random.choice(FUNST.HIT)
+    throw = random.choice(FUNST.THROW)
 
     if update.effective_user.id == 1096215023:
         temp = "@NeoTheKitty scratches {user2}"
@@ -109,20 +109,20 @@ def pat(update: Update, context: CallbackContext):
     pat_type = random.choice(("Text", "Gif", "Sticker"))
     if pat_type == "Gif":
         try:
-            temp = random.choice(fun_strings.PAT_GIFS)
+            temp = random.choice(FUNST.PAT_GIFS)
             reply_to.reply_animation(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Sticker":
         try:
-            temp = random.choice(fun_strings.PAT_STICKERS)
+            temp = random.choice(FUNST.PAT_STICKERS)
             reply_to.reply_sticker(temp)
         except BadRequest:
             pat_type = "Text"
 
     if pat_type == "Text":
-        temp = random.choice(fun_strings.PAT_TEMPLATES)
+        temp = random.choice(FUNST.PAT_TEMPLATES)
         reply = temp.format(user1=user1, user2=user2)
         deletion(update, context, reply_to.reply_text(reply, parse_mode=ParseMode.HTML))
 
@@ -146,7 +146,7 @@ def shout(update: Update, context: CallbackContext):
 
 
 def toss(update: Update, context: CallbackContext):
-    deletion(update, context, update.message.reply_text(random.choice(fun_strings.TOSS)))
+    deletion(update, context, update.message.reply_text(random.choice(FUNST.TOSS)))
 
 
 def shrug(update: Update, context: CallbackContext):
@@ -168,9 +168,9 @@ def bluetext(update: Update, context: CallbackContext):
 
 
 def rlg(update: Update, context: CallbackContext):
-    eyes = random.choice(fun_strings.EYES)
-    mouth = random.choice(fun_strings.MOUTHS)
-    ears = random.choice(fun_strings.EARS)
+    eyes = random.choice(FUNST.EYES)
+    mouth = random.choice(FUNST.MOUTHS)
+    ears = random.choice(FUNST.EARS)
 
     if len(eyes) == 2:
         repl = ears[0] + eyes[0] + mouth[0] + eyes[1] + ears[1]
@@ -185,7 +185,7 @@ def decide(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    deletion(update, context, reply_text(random.choice(fun_strings.DECIDE)))
+    deletion(update, context, reply_text(random.choice(FUNST.DECIDE)))
 
 
 def eightball(update: Update, context: CallbackContext):
@@ -194,7 +194,7 @@ def eightball(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    deletion(update, context, reply_text(random.choice(fun_strings.EIGHTBALL)))
+    deletion(update, context, reply_text(random.choice(FUNST.EIGHTBALL)))
 
 
 def table(update: Update, context: CallbackContext):
@@ -203,7 +203,7 @@ def table(update: Update, context: CallbackContext):
         if update.effective_message.reply_to_message
         else update.effective_message.reply_text
     )
-    deletion(update, context, reply_text(random.choice(fun_strings.TABLE)))
+    deletion(update, context, reply_text(random.choice(FUNST.TABLE)))
 
 
 normiefont = [

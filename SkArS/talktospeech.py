@@ -1,4 +1,5 @@
 from Import import *
+from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
@@ -52,4 +53,9 @@ def tts(update: Update, context: CallbackContext):
 TTS_HANDLER = DisableAbleCommandHandler("tts", tts, run_async=True)
 dispatcher.add_handler(TTS_HANDLER)
 
+
+__help__ = f"""{ALKL}
+ *Text to speech:*
+ • `/tts <text>`: convert text to speech
+"""
 __handlers__ = [TTS_HANDLER]
