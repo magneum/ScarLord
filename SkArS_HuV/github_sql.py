@@ -1,7 +1,7 @@
 import threading
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
-from ᴋʟᴀx_ʙᴀꜱᴇ import SESSION, BASE
+from SkArS_HuV import SESSION, BASE
 
 
 class GitHub(BASE):

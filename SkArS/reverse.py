@@ -1,7 +1,7 @@
 # from Import import *
 # from SƈαɾLσɾԃ import dispatcher
 # from SkArS.TURNOFF import DisableAbleCommandHandler
-# from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
+# from SkArS_HuV.clear_cmd_sql import get_clearcmd
 # from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
 # opener = urllib.request.build_opener()

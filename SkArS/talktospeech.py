@@ -1,5 +1,5 @@
 from Import import *
-from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
+from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete

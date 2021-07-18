@@ -1,5 +1,5 @@
 from Import import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.feds_sql as sql
+import SkArS_HuV.feds_sql as sql
 from SƈαɾLσɾԃ import (
     EVENT_LOGS,
     LOGGER,
@@ -161,7 +161,7 @@ def rename_fed(update: Update, context: CallbackContext):
     verify_fed = sql.get_fed_info(fed_id)
 
     if not verify_fed:
-        return msg.reply_text("This fed does not exist in my ᴋʟᴀx_ʙᴀꜱᴇ!")
+        return msg.reply_text("This fed does not exist in my SkArS_HuV!")
 
     if is_user_fed_owner(fed_id, user.id):
         sql.rename_fed(fed_id, user.id, newname)

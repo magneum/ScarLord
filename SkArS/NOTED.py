@@ -1,7 +1,7 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.notes_sql as sql
-from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
+import SkArS_HuV.notes_sql as sql
+from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, KLAW_LINGS
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker

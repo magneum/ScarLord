@@ -8,11 +8,11 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     user_admin_no_reply,
 )
 from SkArS.LOGGER import loggable
-from ᴋʟᴀx_ʙᴀꜱᴇ import antiflood_sql as sql
+from SkArS_HuV import antiflood_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
 from SkArS.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
-from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
+from SkArS_HuV.approve_sql import is_approved
 
 __mod_name__ = "🌡 ᴀɴᴛɪꜰʟᴏᴏᴅ"
 

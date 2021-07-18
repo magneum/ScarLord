@@ -1,6 +1,6 @@
 from Import import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.global_bans_sql as sql
-from ᴋʟᴀx_ʙᴀꜱᴇ.users_sql import get_user_com_chats
+import SkArS_HuV.global_bans_sql as sql
+from SkArS_HuV.users_sql import get_user_com_chats
 from SƈαɾLσɾԃ import (
     DEV_USERS,
     EVENT_LOGS,

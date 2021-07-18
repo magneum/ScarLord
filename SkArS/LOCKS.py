@@ -1,6 +1,6 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.locks_sql as sql
+import SkArS_HuV.locks_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, LOGGER
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
@@ -12,7 +12,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
 )
 from SkArS.LOGGER import loggable
 from SkArS.CONNECT import connected
-from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
+from SkArS_HuV.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 
 __mod_name__ = "🔐 ʟᴏᴄᴋꜱ"

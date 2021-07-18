@@ -2,7 +2,7 @@ from Import import *
 from SƈαɾLσɾԃ import OWNER_ID, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus
-from ᴋʟᴀx_ʙᴀꜱᴇ.users_sql import get_user_com_chats
+from SkArS_HuV.users_sql import get_user_com_chats
 
 
 

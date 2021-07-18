@@ -1,5 +1,5 @@
 from Import import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.blsticker_sql as sql
+import SkArS_HuV.blsticker_sql as sql
 from SƈαɾLσɾԃ import LOGGER, dispatcher
 from SkArS.CONNECT import connected
 from SkArS.TURNOFF import DisableAbleCommandHandler

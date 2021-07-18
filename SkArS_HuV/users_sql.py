@@ -1,6 +1,6 @@
 from Import import *
 from SƈαɾLσɾԃ import dispatcher
-from ᴋʟᴀx_ʙᴀꜱᴇ import BASE, SESSION
+from SkArS_HuV import BASE, SESSION
 from ᴍᴇᴍᴏɪʀᴇ import *
 
 

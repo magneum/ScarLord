@@ -1,9 +1,9 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.users_sql as sql
+import SkArS_HuV.users_sql as sql
 from SƈαɾLσɾԃ import DEV_USERS, LOGGER, OWNER_ID, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus, sudo_plus
-from ᴋʟᴀx_ʙᴀꜱᴇ.users_sql import get_all_users
+from SkArS_HuV.users_sql import get_all_users
 
 __mod_name__ = "👨‍👨‍👦 ᴜꜱᴇʀꜱ"
 

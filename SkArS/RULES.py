@@ -1,6 +1,6 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.rules_sql as sql
+import SkArS_HuV.rules_sql as sql
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import markdown_parser

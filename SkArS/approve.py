@@ -2,7 +2,7 @@ from Import import *
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
-import ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql as sql
+import SkArS_HuV.approve_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from SkArS.LOGGER import loggable
 

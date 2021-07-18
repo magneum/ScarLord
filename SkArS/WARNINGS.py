@@ -19,8 +19,8 @@ from ꜰᴜɴᴄᴘᴏᴅ.filters import CustomFilters
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import split_quotes
 from SkArS.LOGGER import loggable
-from ᴋʟᴀx_ʙᴀꜱᴇ import warns_sql as sql
-from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
+from SkArS_HuV import warns_sql as sql
+from SkArS_HuV.approve_sql import is_approved
 
 __mod_name__ = "🗯 ᴡᴀʀɴɪɴɢꜱ"
 

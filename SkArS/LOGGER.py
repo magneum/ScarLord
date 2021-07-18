@@ -13,7 +13,7 @@ if is_module_loaded(FILENAME):
 
     from SƈαɾLσɾԃ import EVENT_LOGS, LOGGER, dispatcher
     from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
-    from ᴋʟᴀx_ʙᴀꜱᴇ import log_channel_sql as sql
+    from SkArS_HuV import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)

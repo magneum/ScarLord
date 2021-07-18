@@ -8,7 +8,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     dev_plus,
     user_admin,
 )
-from ᴋʟᴀx_ʙᴀꜱᴇ import cleaner_sql as sql
+from SkArS_HuV import cleaner_sql as sql
 
 __mod_name__ = "⌨️ ʙʟᴜᴇᴛᴇxᴛ"
 

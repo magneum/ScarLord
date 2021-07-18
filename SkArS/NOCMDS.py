@@ -1,6 +1,6 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql as sql
+import SkArS_HuV.clear_cmd_sql as sql
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, connection_status
 

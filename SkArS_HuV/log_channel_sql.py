@@ -1,5 +1,5 @@
 from Import import *
-from ᴋʟᴀx_ʙᴀꜱᴇ import BASE, SESSION
+from SkArS_HuV import BASE, SESSION
 from ᴍᴇᴍᴏɪʀᴇ import *
 
 

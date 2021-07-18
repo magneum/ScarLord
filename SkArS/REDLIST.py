@@ -1,6 +1,6 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.blacklist_sql as sql
+import SkArS_HuV.blacklist_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
@@ -10,7 +10,7 @@ from SkArS.LOGGER import loggable
 from SkArS.WARNINGS import warn
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
 from SkArS.CONNECT import connected
-from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
+from SkArS_HuV.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 
 __mod_name__ = "🏴‍☠️ ʙʟᴀᴄᴋʟɪꜱᴛꜱ"

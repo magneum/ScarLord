@@ -1,6 +1,6 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
-import ᴋʟᴀx_ʙᴀꜱᴇ.connection_sql as sql
+import SkArS_HuV.connection_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, DEV_USERS
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action

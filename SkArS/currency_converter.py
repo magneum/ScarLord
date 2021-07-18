@@ -1,6 +1,6 @@
 from Import import *
 from SƈαɾLσɾԃ import CASH_API_KEY, dispatcher
-from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
+from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
 
