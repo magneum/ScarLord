@@ -7,7 +7,7 @@ from SƈαɾLσɾԃ import (
     KLAW_LINGS,
     dispatcher,
 )
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
     can_restrict,
@@ -21,7 +21,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
 )
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user_and_text
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from ᴋʟᴀx.LOGGER import gloggable, loggable
+from SkArS.LOGGER import gloggable, loggable
 
 
 __mod_name__ = "🚩 ʙᴀɴꜱ"

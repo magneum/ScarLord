@@ -1,4 +1,4 @@
-import ᴋʟᴀx_ʙᴀꜱᴇ.blacklistusers_sql as sql
+import SkArS_ʙᴀꜱᴇ.blacklistusers_sql as sql
 from SƈαɾLσɾԃ import ALLOW_EXCL
 from SƈαɾLσɾԃ import DEV_USERS, KLAW_LINGS
 

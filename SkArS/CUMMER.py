@@ -6,7 +6,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import is_user_ban_protected,user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.misc import build_keyboard, revert_buttons
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import get_welcome_type
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import escape_invalid_curly_brackets,markdown_parser
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 from ᴋʟᴀx_ʙᴀꜱᴇ.global_bans_sql import is_user_gbanned
 
 __mod_name__ = "📟 ᴡᴇʟᴄᴏᴍᴇ"

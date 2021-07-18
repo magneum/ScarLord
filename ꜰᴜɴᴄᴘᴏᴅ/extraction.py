@@ -1,5 +1,5 @@
 from SƈαɾLσɾԃ import LOGGER
-from ᴋʟᴀx.USERS import get_user_id
+from SkArS.USERS import get_user_id
 from Import import *
 
 def id_from_reply(message):

@@ -1,6 +1,6 @@
 from Import import *
 from SƈαɾLσɾԃ import dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 
 
 def paste(update: Update, context: CallbackContext):

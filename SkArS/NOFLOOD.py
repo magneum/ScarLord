@@ -7,10 +7,10 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 from ᴋʟᴀx_ʙᴀꜱᴇ import antiflood_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from ᴋʟᴀx.CONNECT import connected
+from SkArS.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
 

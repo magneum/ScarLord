@@ -1,7 +1,7 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SƈαɾLσɾԃ import dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
     can_restrict,
@@ -18,7 +18,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
 from ꜰᴜɴᴄᴘᴏᴅ.filters import CustomFilters
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import split_quotes
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 from ᴋʟᴀx_ʙᴀꜱᴇ import warns_sql as sql
 from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
 

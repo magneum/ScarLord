@@ -2,14 +2,14 @@ from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 import ᴋʟᴀx_ʙᴀꜱᴇ.blacklist_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_text
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
-from ᴋʟᴀx.LOGGER import loggable
-from ᴋʟᴀx.WARNINGS import warn
+from SkArS.LOGGER import loggable
+from SkArS.WARNINGS import warn
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from ᴋʟᴀx.CONNECT import connected
+from SkArS.CONNECT import connected
 from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 

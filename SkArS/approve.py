@@ -1,10 +1,10 @@
 from Import import *
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
 import ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 
 
 

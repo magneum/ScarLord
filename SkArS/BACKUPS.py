@@ -9,7 +9,7 @@ import ᴋʟᴀx_ʙᴀꜱᴇ.rules_sql as rulessql
 import ᴋʟᴀx_ʙᴀꜱᴇ.blacklist_sql as blacklistsql
 from ᴋʟᴀx_ʙᴀꜱᴇ import disable_sql as disabledsql
 import ᴋʟᴀx_ʙᴀꜱᴇ.locks_sql as locksql
-from ᴋʟᴀx.CONNECT import connected
+from SkArS.CONNECT import connected
 
 __mod_name__ = "✉️ ʙᴀᴄᴋᴜᴘꜱ"
 

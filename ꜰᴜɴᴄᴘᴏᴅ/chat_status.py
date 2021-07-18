@@ -418,6 +418,6 @@ def connection_status(func):
 
 
 # Workaround for circular import with connection.py
-from ᴋʟᴀx import CONNECT as connection
+from SkArS import CONNECT as connection
 
 connected = connection.connected

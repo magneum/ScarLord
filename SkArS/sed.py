@@ -1,6 +1,6 @@
 from Import import *
 from SƈαɾLσɾԃ import LOGGER, dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleMessageHandler
+from SkArS.TURNOFF import DisableAbleMessageHandler
 from ꜰᴜɴᴄᴘᴏᴅ.regex_helper import infinite_loop_check
 
 DELIMITERS = ("/", ":", "|", "_")

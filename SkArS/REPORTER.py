@@ -2,7 +2,7 @@ from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SƈαɾLσɾԃ import LOGGER, KLAW_LINGS, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 from ᴋʟᴀx_ʙᴀꜱᴇ import reporting_sql as sql
 
 __mod_name__ = "⚔️ ʀᴇᴘᴏʀᴛꜱ"

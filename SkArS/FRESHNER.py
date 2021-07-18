@@ -1,7 +1,7 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SƈαɾLσɾԃ import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_can_delete,
     connection_status,

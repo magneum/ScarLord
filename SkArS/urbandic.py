@@ -1,6 +1,6 @@
 from Import import *
 from SƈαɾLσɾԃ import dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
 

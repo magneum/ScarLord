@@ -1,10 +1,10 @@
 from Import import *
 from ᴍᴇᴍᴏɪʀᴇ import *
 from SƈαɾLσɾԃ import LOGGER, updater
-from ᴋʟᴀx import ALL_MODULES
+from SkArS import ALL_MODULES
 
 for module_name in ALL_MODULES:
-    SƈαɾLσɾԃS = importlib.import_module("ᴋʟᴀx."  +    module_name)
+    SƈαɾLσɾԃS = importlib.import_module("SkArS."  +    module_name)
     if not lib(SƈαɾLσɾԃS, "__mod_name__"):
         SƈαɾLσɾԃS.__mod_name__ = SƈαɾLσɾԃS.__name__
     if SƈαɾLσɾԃS.__mod_name__.lower() not in IMPORTED:

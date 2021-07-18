@@ -2,7 +2,7 @@ from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 import ᴋʟᴀx_ʙᴀꜱᴇ.locks_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, LOGGER
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     can_delete,
     is_user_admin,
@@ -10,8 +10,8 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     is_bot_admin,
     user_admin,
 )
-from ᴋʟᴀx.LOGGER import loggable
-from ᴋʟᴀx.CONNECT import connected
+from SkArS.LOGGER import loggable
+from SkArS.CONNECT import connected
 from ᴋʟᴀx_ʙᴀꜱᴇ.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 

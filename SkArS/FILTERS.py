@@ -1,7 +1,7 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SƈαɾLσɾԃ import dispatcher, LOGGER, KLAW_LINGS
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_text
@@ -16,7 +16,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.string_handling import (
 )
 from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
 from ᴋʟᴀx_ʙᴀꜱᴇ import cust_filters_sql as sql
-from ᴋʟᴀx.CONNECT import connected
+from SkArS.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 
 

@@ -1,7 +1,7 @@
 from Import import *
 from ꜱᴀʏᴏɴᴀʀᴀ import *
 from SƈαɾLσɾԃ import KLAW_LINGS, dispatcher
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
     can_pin,
@@ -15,7 +15,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from ᴋʟᴀx.LOGGER import loggable
+from SkArS.LOGGER import loggable
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 
 

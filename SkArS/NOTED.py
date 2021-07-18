@@ -3,7 +3,7 @@ from ꜱᴀʏᴏɴᴀʀᴀ import *
 import ᴋʟᴀx_ʙᴀꜱᴇ.notes_sql as sql
 from ᴋʟᴀx_ʙᴀꜱᴇ.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, KLAW_LINGS
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, connection_status
 from ꜰᴜɴᴄᴘᴏᴅ.misc import build_keyboard, revert_buttons, delete
@@ -11,7 +11,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.msg_types import get_note_type
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import (
     escape_invalid_curly_brackets,
 )
-from ᴋʟᴀx.private_notes import getprivatenotes
+from SkArS.private_notes import getprivatenotes
 
 
 __mod_name__ = "📜 ɴᴏᴛᴇꜱ"

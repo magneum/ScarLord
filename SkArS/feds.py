@@ -8,7 +8,7 @@ from SƈαɾLσɾԃ import (
     KLAW_LINGS,
     dispatcher,
 )
-from ᴋʟᴀx.TURNOFF import DisableAbleCommandHandler
+from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     is_user_admin,
