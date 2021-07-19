@@ -3,7 +3,7 @@ from SƈαɾLσɾԃ import LOGGER, updater
 from SKARS import ALL_MODULES
 
 for module_name in ALL_MODULES:
-    SƈαɾLσɾԃS = importlib.import_module("SKARS."  +    module_name)
+    SƈαɾLσɾԃS = importlib.import_module("SKARS."+module_name)
     if not lib(SƈαɾLσɾԃS, "__mod_name__"):
         SƈαɾLσɾԃS.__mod_name__ = SƈαɾLσɾԃS.__name__
     if SƈαɾLσɾԃS.__mod_name__.lower() not in IMPORTED:
