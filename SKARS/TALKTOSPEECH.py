@@ -6,12 +6,15 @@ from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
 __mod_name__ = "Talk 2 Speech"
 TTS = TTS =__help__ = f"""{ALKL}
-This is a module made to convert any text to speech.
+This is a module made to convert any english text to speech.
 Try it with funny words lol!
 
 ⚔️ •/talk <text>:
-    convert text to speech
-"""
+    convert text to speech"""
+
+US = f"""{ALKL}
+Sent via :@HVScarlordBot
+GitHub:@HypeVoidBot"""
 
 def talk(update: Update, context: CallbackContext):
     args = context.args
@@ -24,34 +27,30 @@ def talk(update: Update, context: CallbackContext):
 
     if args:
         delmsg = "  ".join(args).lower()
-
-        current_time = datetime.strftime(datetime.now(), "%d.%m.%Y %H:%M:%S")
-        filename = datetime.now().strftime("%d%m%y-%H%M%S%f")
         update.message.chat.send_action(ChatAction.RECORD_AUDIO)
         lang = "ml"
         talk = gTTS(delmsg, lang)
-        talk.save("k.mp3")
-        with open("k.mp3", "rb") as f:
+        talk.save("HypeVoidSoulTalks.mp3")
+        with open("HypeVoidSoulTalks.mp3", "rb") as f:
             linelist = list(f)
             linecount = len(linelist)
         if linecount == 1:
             update.message.chat.send_action(ChatAction.RECORD_AUDIO)
+            delmsgtts = message.reply_text(
+            "✨Please Wait...\nMight take few seconds due to heavy usage of this module.",
+            parse_mode = ParseMode.MARKDOWN)
             lang = "en"
             talk = gTTS(delmsg, lang)
-            talk.save("k.mp3")
-        with open("k.mp3", "rb") as speech:
-            delmsg = update.message.reply_voice(speech, quote=False)
-
-        os.remove("k.mp3")
-
+            talk.save("HypeVoidSoulTalks.mp3")
+        with open("HypeVoidSoulTalks.mp3", "rb") as music:
+            delmsg = update.message.reply_voice(music, caption=US,quote=False)
+            delmsgtts.delete()
+        os.remove("HypeVoidSoulTalks.mp3")
     else:
         delmsg = message.reply_text(
         "Reply a message or give something like:\n`/talk <message>`",
-        parse_mode = ParseMode.MARKDOWN
-        )
-
+        parse_mode = ParseMode.MARKDOWN)
     cleartime = get_clearcmd(chat.id, "talk")
-
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 

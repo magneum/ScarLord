@@ -63,7 +63,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(KLAWNESS.format(first_name, PSYCO))
-            update.effective_message.reply_animation(
+            update.effective_message.reply_photo(
                 SƈαɾLσɾԃ_IMG,                
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup([[
