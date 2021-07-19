@@ -1,6 +1,6 @@
 from sideloader import *
 from SƈαɾLσɾԃ import TIME_API_KEY, dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 

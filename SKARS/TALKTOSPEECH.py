@@ -1,7 +1,7 @@
 from sideloader import *
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
 

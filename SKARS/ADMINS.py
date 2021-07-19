@@ -1,6 +1,6 @@
 from sideloader import *
 from SƈαɾLσɾԃ import KLAW_LINGS, dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
     can_pin,
@@ -14,7 +14,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
+from SKARS.LOGGER import loggable
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 
 

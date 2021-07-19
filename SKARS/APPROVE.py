@@ -1,10 +1,10 @@
 from sideloader import *
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
 import SKARSHOTS.approve_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
+from SKARS.LOGGER import loggable
 
 
 

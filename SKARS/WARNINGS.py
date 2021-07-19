@@ -1,6 +1,6 @@
 from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
     can_restrict,
@@ -17,7 +17,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
 from ꜰᴜɴᴄᴘᴏᴅ.filters import CustomFilters
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import split_quotes
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
+from SKARS.LOGGER import loggable
 from SKARSHOTS import warns_sql as sql
 from SKARSHOTS.approve_sql import is_approved
 

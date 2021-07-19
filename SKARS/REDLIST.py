@@ -1,14 +1,14 @@
 from sideloader import *
 import SKARSHOTS.blacklist_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_text
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂.WARNINGS import warn
+from SKARS.LOGGER import loggable
+from SKARS.WARNINGS import warn
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
+from SKARS.CONNECT import connected
 from SKARSHOTS.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 

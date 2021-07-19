@@ -8,7 +8,7 @@ import SKARSHOTS.rules_sql as rulessql
 import SKARSHOTS.blacklist_sql as blacklistsql
 from SKARSHOTS import disable_sql as disabledsql
 import SKARSHOTS.locks_sql as locksql
-from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
+from SKARS.CONNECT import connected
 
 __mod_name__ = "✉️ ʙᴀᴄᴋᴜᴘꜱ"
 

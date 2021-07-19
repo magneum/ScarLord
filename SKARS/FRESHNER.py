@@ -1,6 +1,6 @@
 from sideloader import *
 from SƈαɾLσɾԃ import CustomCommandHandler, dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_can_delete,
     connection_status,

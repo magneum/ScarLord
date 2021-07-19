@@ -2,7 +2,7 @@ from sideloader import *
 import SKARSHOTS.notes_sql as sql
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, dispatcher, KLAW_LINGS
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, connection_status
 from ꜰᴜɴᴄᴘᴏᴅ.misc import build_keyboard, revert_buttons, delete
@@ -10,7 +10,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.msg_types import get_note_type
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import (
     escape_invalid_curly_brackets,
 )
-from 𝚂𝚔𝙰𝚛𝚂.private_notes import getprivatenotes
+from SKARS.private_notes import getprivatenotes
 
 
 __mod_name__ = "📜 ɴᴏᴛᴇꜱ"

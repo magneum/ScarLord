@@ -1,6 +1,6 @@
 from sideloader import *
 from SƈαɾLσɾԃ import dispatcher, LOGGER, KLAW_LINGS
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_text
@@ -15,7 +15,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.string_handling import (
 )
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from SKARSHOTS import cust_filters_sql as sql
-from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
+from SKARS.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 
 

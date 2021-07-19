@@ -5,10 +5,10 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
+from SKARS.LOGGER import loggable
 from SKARSHOTS import antiflood_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
+from SKARS.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 from SKARSHOTS.approve_sql import is_approved
 

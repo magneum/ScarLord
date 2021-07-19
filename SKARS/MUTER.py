@@ -12,7 +12,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
     extract_user_and_text,
 )
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
+from SKARS.LOGGER import loggable
 
 __mod_name__ = "🔇 ᴍᴜᴛɪɴɢ"
 

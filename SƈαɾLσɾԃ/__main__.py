@@ -1,9 +1,9 @@
 from sideloader import *
 from SƈαɾLσɾԃ import LOGGER, updater
-from 𝚂𝚔𝙰𝚛𝚂 import ALL_MODULES
+from SKARS import ALL_MODULES
 
 for module_name in ALL_MODULES:
-    SƈαɾLσɾԃS = importlib.import_module("𝚂𝚔𝙰𝚛𝚂."  +    module_name)
+    SƈαɾLσɾԃS = importlib.import_module("SKARS."  +    module_name)
     if not lib(SƈαɾLσɾԃS, "__mod_name__"):
         SƈαɾLσɾԃS.__mod_name__ = SƈαɾLσɾԃS.__name__
     if SƈαɾLσɾԃS.__mod_name__.lower() not in IMPORTED:

@@ -1,14 +1,14 @@
 from sideloader import *
 import SKARSHOTS.blsticker_sql as sql
 from SƈαɾLσɾԃ import LOGGER, dispatcher
-from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
-from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
+from SKARS.CONNECT import connected
+from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
-from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂.WARNINGS import warn
+from SKARS.LOGGER import loggable
+from SKARS.WARNINGS import warn
 
 
 def blackliststicker(update: Update, context: CallbackContext):
