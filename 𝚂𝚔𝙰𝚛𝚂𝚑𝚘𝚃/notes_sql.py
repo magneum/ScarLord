@@ -1,5 +1,5 @@
-from Import import *
-from ᴍᴇᴍᴏɪʀᴇ import *
+from 𝚃𝚢𝚙𝚘 import *
+from 𝙸𝚖𝚙𝚘𝚛𝚝𝚎𝚛 import *
 from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
 
