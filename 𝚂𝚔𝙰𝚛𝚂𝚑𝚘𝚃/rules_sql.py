@@ -1,6 +1,6 @@
 from Import import *
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import BASE, SESSION
 from ᴍᴇᴍᴏɪʀᴇ import *
+from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
 
 
 class Rules(BASE):

@@ -1,7 +1,8 @@
 from Import import *
-from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import BASE, SESSION
 from ᴍᴇᴍᴏɪʀᴇ import *
+from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
+from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
+
 
 class Notes(BASE):
     __tablename__ = "notes"

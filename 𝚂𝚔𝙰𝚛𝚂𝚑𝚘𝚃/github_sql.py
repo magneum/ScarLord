@@ -1,14 +1,12 @@
-import threading
-from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer
-from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import SESSION, BASE
+from Import import *
+from ᴍᴇᴍᴏɪʀᴇ import *
+from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
+
 
 
 class GitHub(BASE):
     __tablename__ = "github"
-    chat_id = Column(
-        String(14), primary_key=True
-    )  # string because int is too large to be stored in a PSQL database.
+    chat_id = Column(String(14), primary_key=True) 
     name = Column(UnicodeText, primary_key=True)
     value = Column(UnicodeText, nullable=False)
     backoffset = Column(Integer, nullable=False, default=0)
