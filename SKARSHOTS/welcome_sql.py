@@ -1,7 +1,7 @@
 from 𝚃𝚢𝚙𝚘 import *
 from 𝙵𝚊𝚗𝚌𝚒 import *
 from IMPORTER import *
-from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
+from VASSE import *
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
 
 

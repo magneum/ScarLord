@@ -1,6 +1,6 @@
 from 𝚃𝚢𝚙𝚘 import *
 from IMPORTER import *
-from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
+from VASSE import *
 
 
 class GroupLogs(BASE):

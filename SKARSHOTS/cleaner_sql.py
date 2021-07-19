@@ -1,6 +1,6 @@
 from TYPOS import *
 from IMPORTER import *
-from 𝙱𝚊𝚜𝚜𝚎𝚌𝚘𝚗 import *
+from VASSE import *
 
 class CleanerBlueTextChatSettings(BASE):
     __tablename__ = "cleaner_bluetext_chat_setting"
