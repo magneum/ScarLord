@@ -2,6 +2,8 @@ from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 
+__mod_name__ = "React"
+
 reactions = [
     "( ͡° ͜ʖ ͡°)",
     "( . •́ _ʖ •̀ .)",

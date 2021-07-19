@@ -21,6 +21,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
 )
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import markdown_parser
 
+__mod_name__ = "Federations"
 
 FBAN_ERRORS = {
     "User is an administrator of the chat",

@@ -9,6 +9,7 @@ from SKARSHOTS.clear_cmd_sql import get_clearcmd
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
+__mod_name__ = "Funs"
 
 def runs(update: Update, context: CallbackContext):
     deletion(update, context, update.effective_message.reply_text(random.choice(FUNST.RUN_STRINGS)))

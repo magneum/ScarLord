@@ -23,6 +23,8 @@ from ꜰᴜɴᴄᴘᴏᴅ.extraction import (
 )
 from ꜰᴜɴᴄᴘᴏᴅ.misc import send_to_list
 
+__mod_name__ = "Global Ban"
+
 GBAN_ENFORCE_GROUP = 6
 
 GBAN_ERRORS = {

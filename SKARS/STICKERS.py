@@ -2,6 +2,8 @@ from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 
+__mod_name__ = "Stickers"
+
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
 

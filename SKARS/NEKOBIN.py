@@ -2,6 +2,7 @@ from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 
+__mod_name__ = "nekobin"
 
 def paste(update: Update, context: CallbackContext):
     args = context.args

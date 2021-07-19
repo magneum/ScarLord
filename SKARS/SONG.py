@@ -4,6 +4,7 @@ from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
+__mod_name__ = "Song Name"
 
 def lyrics(update: Update, context: CallbackContext):
     message = update.effective_message
@@ -38,13 +39,10 @@ def lyrics(update: Update, context: CallbackContext):
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
-
-LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics, run_async=True)
-
-dispatcher.add_handler(LYRICS_HANDLER)
-
-
 __help__ = f"""{ALKL}
 *Lyrics:*
  • `/lyrics <song name>`: does a lyric search for a given song name\n
 """
+
+LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics, run_async=True)
+dispatcher.add_handler(LYRICS_HANDLER)

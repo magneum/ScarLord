@@ -3,6 +3,7 @@ from SƈαɾLσɾԃ import WEATHER_API, dispatcher
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
+__mod_name__ = "Climate"
 
 def get_tz(con):
     for c_code in c_n:

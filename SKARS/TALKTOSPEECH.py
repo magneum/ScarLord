@@ -4,6 +4,8 @@ from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
+__mod_name__ = "Talk 2 Speech"
+
 
 def tts(update: Update, context: CallbackContext):
     args = context.args

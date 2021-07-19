@@ -6,6 +6,7 @@ import SKARSHOTS.approve_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from SKARS.LOGGER import loggable
 
+__mod_name__ = "Approve"
 
 
 @loggable

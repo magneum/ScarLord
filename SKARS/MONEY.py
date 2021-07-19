@@ -3,6 +3,7 @@ from SƈαɾLσɾԃ import CASH_API_KEY, dispatcher
 from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
+__mod_name__ = "Money"
 
 def convert(update: Update, context: CallbackContext):
     chat = update.effective_chat

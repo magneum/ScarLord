@@ -11,6 +11,8 @@ from SKARS.LOGGER import loggable
 from SKARS.WARNINGS import warn
 
 
+__mod_name__ = "No Stickers"
+
 def blackliststicker(update: Update, context: CallbackContext):
     msg = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat  # type: Optional[Chat]
