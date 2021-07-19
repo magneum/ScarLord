@@ -36,19 +36,19 @@ def talk(update: Update, context: CallbackContext):
             linecount = len(linelist)
         if linecount == 1:
             update.message.chat.send_action(ChatAction.RECORD_AUDIO)
-            delmsgtts = message.reply_text(
+            message.reply_text(
             "✨Please Wait...\nMight take few seconds due to heavy usage of this module.",
             parse_mode = ParseMode.MARKDOWN)
+            asyncio.sleep(2)
             lang = "en"
             talk = gTTS(delmsg, lang)
             talk.save("HypeVoidSoulTalks.mp3")
         with open("HypeVoidSoulTalks.mp3", "rb") as music:
             delmsg = update.message.reply_voice(music, caption=US,quote=False)
-            delmsgtts.delete()
         os.remove("HypeVoidSoulTalks.mp3")
     else:
         delmsg = message.reply_text(
-        "Reply a message or give something like:\n`/talk <message>`",
+        f"""{ALKL}Reply a message or give something like\n⚔️ •/talk:<message>""",
         parse_mode = ParseMode.MARKDOWN)
     cleartime = get_clearcmd(chat.id, "talk")
     if cleartime:
