@@ -456,28 +456,28 @@ Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, 
 Note:
 ⚔️ •<sticker link> can be https://t.me/addstickers/<sticker> or just <sticker> or reply to the sticker message
 """
-BLACKLIST_HANDLER = DisableAbleCommandHandler(
+BLACKLIST_WORK = DisableAbleCommandHandler(
     "blacklist", blacklist, admin_ok=True, run_async=True
 )
-ADD_BLACKLIST_HANDLER = CommandHandler("addblacklist", add_blacklist, run_async=True)
-UNBLACKLIST_HANDLER = CommandHandler("unblacklist", unblacklist, run_async=True)
-BLACKLISTMODE_HANDLER = CommandHandler("blacklistmode", blacklist_mode, run_async=True)
-BLACKLIST_DEL_HANDLER = MessageHandler(
+ADD_BLACKLIST_WORK = CommandHandler("addblacklist", add_blacklist, run_async=True)
+UNBLACKLIST_WORK = CommandHandler("unblacklist", unblacklist, run_async=True)
+BLACKLISTMODE_WORK = CommandHandler("blacklistmode", blacklist_mode, run_async=True)
+BLACKLIST_DEL_WORK = MessageHandler(
     (Filters.text | Filters.command | Filters.sticker | Filters.photo) & Filters.chat_type.groups,
     del_blacklist,
     run_async=True,
 )
 
-dispatcher.add_handler(BLACKLIST_HANDLER)
-dispatcher.add_handler(ADD_BLACKLIST_HANDLER)
-dispatcher.add_handler(UNBLACKLIST_HANDLER)
-dispatcher.add_handler(BLACKLISTMODE_HANDLER)
-dispatcher.add_handler(BLACKLIST_DEL_HANDLER, group=BLACKLIST_GROUP)
+dispatcher.add_handler(BLACKLIST_WORK)
+dispatcher.add_handler(ADD_BLACKLIST_WORK)
+dispatcher.add_handler(UNBLACKLIST_WORK)
+dispatcher.add_handler(BLACKLISTMODE_WORK)
+dispatcher.add_handler(BLACKLIST_DEL_WORK, group=BLACKLIST_GROUP)
 
 __handlers__ = [
-    BLACKLIST_HANDLER,
-    ADD_BLACKLIST_HANDLER,
-    UNBLACKLIST_HANDLER,
-    BLACKLISTMODE_HANDLER,
-    (BLACKLIST_DEL_HANDLER, BLACKLIST_GROUP),
+    BLACKLIST_WORK,
+    ADD_BLACKLIST_WORK,
+    UNBLACKLIST_WORK,
+    BLACKLISTMODE_WORK,
+    (BLACKLIST_DEL_WORK, BLACKLIST_GROUP),
 ]

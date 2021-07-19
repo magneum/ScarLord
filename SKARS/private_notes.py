@@ -47,6 +47,6 @@ def __migrate__(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
-PRIVATENOTES_HANDLER = CommandHandler("privatenotes", privatenotes, run_async=True)
+PRIVATENOTES_WORK = CommandHandler("privatenotes", privatenotes, run_async=True)
 
-dispatcher.add_handler(PRIVATENOTES_HANDLER)
+dispatcher.add_handler(PRIVATENOTES_WORK)

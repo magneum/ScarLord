@@ -387,26 +387,26 @@ __help__ = f"""{ALKL}
 ⚔️ •/kick <userhandle>-\n same as punch
 """
 
-BAN_HANDLER = DisableAbleCommandHandler(["ban", "sban"], ban, run_async=True)
-TEMPBAN_HANDLER = DisableAbleCommandHandler("tban", temp_ban, run_async=True)
-PUNCH_HANDLER = DisableAbleCommandHandler(["punch", "kick"], punch, run_async=True)
-UNBAN_HANDLER = DisableAbleCommandHandler("unban", unban, run_async=True)
-ROAR_HANDLER = DisableAbleCommandHandler("roar", selfunban, run_async=True)
-PUNCHME_HANDLER = DisableAbleCommandHandler(["punchme", "kickme"], punchme, filters=Filters.chat_type.groups, run_async=True)
+BAN_WORK = DisableAbleCommandHandler(["ban", "sban"], ban, run_async=True)
+TEMPBAN_WORK = DisableAbleCommandHandler("tban", temp_ban, run_async=True)
+PUNCH_WORK = DisableAbleCommandHandler(["punch", "kick"], punch, run_async=True)
+UNBAN_WORK = DisableAbleCommandHandler("unban", unban, run_async=True)
+ROAR_WORK = DisableAbleCommandHandler("roar", selfunban, run_async=True)
+PUNCHME_WORK = DisableAbleCommandHandler(["punchme", "kickme"], punchme, filters=Filters.chat_type.groups, run_async=True)
 
-dispatcher.add_handler(BAN_HANDLER)
-dispatcher.add_handler(TEMPBAN_HANDLER)
-dispatcher.add_handler(PUNCH_HANDLER)
-dispatcher.add_handler(UNBAN_HANDLER)
-dispatcher.add_handler(ROAR_HANDLER)
-dispatcher.add_handler(PUNCHME_HANDLER)
+dispatcher.add_handler(BAN_WORK)
+dispatcher.add_handler(TEMPBAN_WORK)
+dispatcher.add_handler(PUNCH_WORK)
+dispatcher.add_handler(UNBAN_WORK)
+dispatcher.add_handler(ROAR_WORK)
+dispatcher.add_handler(PUNCHME_WORK)
 
 
 __handlers__ = [
-    BAN_HANDLER,
-    TEMPBAN_HANDLER,
-    PUNCH_HANDLER,
-    UNBAN_HANDLER,
-    ROAR_HANDLER,
-    PUNCHME_HANDLER,
+    BAN_WORK,
+    TEMPBAN_WORK,
+    PUNCH_WORK,
+    UNBAN_WORK,
+    ROAR_WORK,
+    PUNCHME_WORK,
 ]

@@ -487,22 +487,22 @@ __help__ = f"""{ALKL} Stickers Blacklist"""
 
 __Hype_Scar_Var__ = "Stickers Blacklist"
 
-BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
+BLACKLIST_STICKER_WORK = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True, run_async=True
 )
-ADDBLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
+ADDBLACKLIST_STICKER_WORK = DisableAbleCommandHandler(
     "addblsticker", add_blackliststicker, run_async=True
 )
-UNBLACKLIST_STICKER_HANDLER = CommandHandler(
+UNBLACKLIST_STICKER_WORK = CommandHandler(
     ["unblsticker", "rmblsticker"], unblackliststicker, run_async=True
 )
-BLACKLISTMODE_HANDLER = CommandHandler("blstickermode", blacklist_mode, run_async=True)
-BLACKLIST_STICKER_DEL_HANDLER = MessageHandler(
+BLACKLISTMODE_WORK = CommandHandler("blstickermode", blacklist_mode, run_async=True)
+BLACKLIST_STICKER_DEL_WORK = MessageHandler(
     Filters.sticker & Filters.chat_type.groups, del_blackliststicker, run_async=True
 )
 
-dispatcher.add_handler(BLACKLIST_STICKER_HANDLER)
-dispatcher.add_handler(ADDBLACKLIST_STICKER_HANDLER)
-dispatcher.add_handler(UNBLACKLIST_STICKER_HANDLER)
-dispatcher.add_handler(BLACKLISTMODE_HANDLER)
-dispatcher.add_handler(BLACKLIST_STICKER_DEL_HANDLER)
+dispatcher.add_handler(BLACKLIST_STICKER_WORK)
+dispatcher.add_handler(ADDBLACKLIST_STICKER_WORK)
+dispatcher.add_handler(UNBLACKLIST_STICKER_WORK)
+dispatcher.add_handler(BLACKLISTMODE_WORK)
+dispatcher.add_handler(BLACKLIST_STICKER_DEL_WORK)

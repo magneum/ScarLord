@@ -40,11 +40,11 @@ def leave(update: Update, context: CallbackContext):
         update.effective_message.reply_text("Send a valid chat ID")
 
 
-LEAVE_HANDLER = CommandHandler("leave", leave, run_async=True)
-ALLOWGROUPS_HANDLER = CommandHandler("lockdown", allow_groups, run_async=True)
+LEAVE_WORK = CommandHandler("leave", leave, run_async=True)
+ALLOWGROUPS_WORK = CommandHandler("lockdown", allow_groups, run_async=True)
 
-dispatcher.add_handler(ALLOWGROUPS_HANDLER)
-dispatcher.add_handler(LEAVE_HANDLER)
+dispatcher.add_handler(ALLOWGROUPS_WORK)
+dispatcher.add_handler(LEAVE_WORK)
 
 __Hype_Scar_Var__ = "Dev"
-__handlers__ = [LEAVE_HANDLER, ALLOWGROUPS_HANDLER]
+__handlers__ = [LEAVE_WORK, ALLOWGROUPS_WORK]

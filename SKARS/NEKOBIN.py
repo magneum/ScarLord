@@ -34,11 +34,11 @@ def paste(update: Update, context: CallbackContext):
     )
 
 
-PASTE_HANDLER = DisableAbleCommandHandler("paste", paste, run_async=True)
-dispatcher.add_handler(PASTE_HANDLER)
+PASTE_WORK = DisableAbleCommandHandler("paste", paste, run_async=True)
+dispatcher.add_handler(PASTE_WORK)
 
 __help__ = f"""{ALKL} Nekobin"""
 
 __Hype_Scar_Var__ = "nekobin"
 __command_list__ = ["paste"]
-__handlers__ = [PASTE_HANDLER]
+__handlers__ = [PASTE_WORK]

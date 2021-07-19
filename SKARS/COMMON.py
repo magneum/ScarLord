@@ -42,8 +42,8 @@ def get_user_common_chats(update: Update, context: CallbackContext):
         os.remove("common_chats.txt")
 
 
-COMMON_CHATS_HANDLER = CommandHandler(
+COMMON_CHATS_WORK = CommandHandler(
     "getchats", get_user_common_chats, run_async=True
 )
 
-dispatcher.add_handler(COMMON_CHATS_HANDLER)
+dispatcher.add_handler(COMMON_CHATS_WORK)

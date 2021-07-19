@@ -336,8 +336,8 @@ __help__ = f"""{ALKL}
 
 """
 
-IMPORT_HANDLER = CommandHandler("import", import_data, run_async=True)
-EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True, run_async=True)
+IMPORT_WORK = CommandHandler("import", import_data, run_async=True)
+EXPORT_WORK = CommandHandler("export", export_data, pass_chat_data=True, run_async=True)
 
-dispatcher.add_handler(IMPORT_HANDLER)
-dispatcher.add_handler(EXPORT_HANDLER)
+dispatcher.add_handler(IMPORT_WORK)
+dispatcher.add_handler(EXPORT_WORK)

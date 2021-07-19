@@ -89,10 +89,10 @@ __help__ = f"""{ALKL}
 ⚔️ •/clearcmd <command> restore`: the deletion time set for a specific `<command>` will be removed in current group
 """
 
-CLEARCMD_HANDLER = CommandHandler("clearcmd", clearcmd, run_async=True)
+CLEARCMD_WORK = CommandHandler("clearcmd", clearcmd, run_async=True)
 
-dispatcher.add_handler(CLEARCMD_HANDLER)
+dispatcher.add_handler(CLEARCMD_WORK)
 
 __mod_name__ = "Clear Commands"
 __command_list__ = ["clearcmd"]
-__handlers__ = [CLEARCMD_HANDLER]
+__handlers__ = [CLEARCMD_WORK]

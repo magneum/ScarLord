@@ -22,7 +22,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 __mod_name__ = "♨️ ꜰɪʟᴛᴇʀ"
 
 
-HANDLER_GROUP = 10
+WORK_GROUP = 10
 ENUM_FUNC_MAP = {
     sql.Types.TEXT.value: dispatcher.bot.send_message,
     sql.Types.BUTTON_TEXT.value: dispatcher.bot.send_message,
@@ -79,7 +79,7 @@ def list_handlers(update: Update, context: CallbackContext):
     ))
 
 
-# NOT ASYNC BECAUSE DISPATCHER HANDLER RAISED
+# NOT ASYNC BECAUSE DISPATCHER WORK RAISED
 @user_admin
 
 def filters(update: Update, context: CallbackContext):
@@ -126,9 +126,9 @@ def filters(update: Update, context: CallbackContext):
 
     # Add the filter
     # Note: perhaps handlers can be removed somehow using sql.get_chat_filters
-    for handler in dispatcher.handlers.get(HANDLER_GROUP, []):
+    for handler in dispatcher.handlers.get(WORK_GROUP, []):
         if handler.filters == (keyword, chat_id):
-            dispatcher.remove_handler(handler, HANDLER_GROUP)
+            dispatcher.remove_handler(handler, WORK_GROUP)
 
     text, file_type, file_id = get_filter_type(msg)
     if not msg.reply_to_message and len(extracted) >= 2:
@@ -514,7 +514,7 @@ def deletion(update: Update, context: CallbackContext, delmsg):
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-# NOT ASYNC NOT A HANDLER
+# NOT ASYNC NOT A WORK
 def get_exception(excp, filt, chat):
     if excp.message == "Unsupported url protocol":
         return f"{ALKL}You seem to be trying to use the URL protocol which is not supported. Telegram does not support key for multiple protocols, such as tg: //. Please try again!"
@@ -528,7 +528,7 @@ def get_exception(excp, filt, chat):
         return f"{ALKL}This data could not be sent because it is incorrectly formatted."
 
 
-# NOT ASYNC NOT A HANDLER
+# NOT ASYNC NOT A WORK
 def addnew_filter(update, chat_id, keyword, text, file_type, file_id, buttons):
     msg = update.effective_message
     totalfilt = sql.get_chat_triggers(chat_id)
@@ -588,27 +588,27 @@ Check `/markdownhelp` to know more!
 
 
 
-FILTER_HANDLER = CommandHandler("filter", filters)
-STOP_HANDLER = CommandHandler("stop", stop_filter)
-RMALLFILTER_HANDLER = CommandHandler(
+FILTER_WORK = CommandHandler("filter", filters)
+STOP_WORK = CommandHandler("stop", stop_filter)
+RMALLFILTER_WORK = CommandHandler(
     "removeallfilters", rmall_filters, filters=Filters.chat_type.groups, run_async=True
 )
 RMALLFILTER_CALLBACK = CallbackQueryHandler(rmall_callback, pattern=r"filters_.*", run_async=True)
-LIST_HANDLER = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True, run_async=True)
-CUST_FILTER_HANDLER = MessageHandler(
+LIST_WORK = DisableAbleCommandHandler("filters", list_handlers, admin_ok=True, run_async=True)
+CUST_FILTER_WORK = MessageHandler(
     CustomFilters.has_text & ~Filters.update.edited_message, reply_filter, run_async=True
 )
 
-dispatcher.add_handler(FILTER_HANDLER)
-dispatcher.add_handler(STOP_HANDLER)
-dispatcher.add_handler(LIST_HANDLER)
-dispatcher.add_handler(CUST_FILTER_HANDLER, HANDLER_GROUP)
-dispatcher.add_handler(RMALLFILTER_HANDLER)
+dispatcher.add_handler(FILTER_WORK)
+dispatcher.add_handler(STOP_WORK)
+dispatcher.add_handler(LIST_WORK)
+dispatcher.add_handler(CUST_FILTER_WORK, WORK_GROUP)
+dispatcher.add_handler(RMALLFILTER_WORK)
 dispatcher.add_handler(RMALLFILTER_CALLBACK)
 
 __handlers__ = [
-    FILTER_HANDLER,
-    STOP_HANDLER,
-    LIST_HANDLER,
-    (CUST_FILTER_HANDLER, HANDLER_GROUP, RMALLFILTER_HANDLER),
+    FILTER_WORK,
+    STOP_WORK,
+    LIST_WORK,
+    (CUST_FILTER_WORK, WORK_GROUP, RMALLFILTER_WORK),
 ]

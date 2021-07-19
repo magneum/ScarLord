@@ -150,5 +150,5 @@ def weather(update: Update, context: CallbackContext):
 __help__ = f"""{ALKL}Climate"""
 
 
-WEATHER_HANDLER = CommandHandler(["weather"], weather, run_async=True)
-dispatcher.add_handler(WEATHER_HANDLER)
+WEATHER_WORK = CommandHandler(["weather"], weather, run_async=True)
+dispatcher.add_handler(WEATHER_WORK)

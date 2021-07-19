@@ -307,19 +307,19 @@ if is_module_loaded(FILENAME):
     def __chat_settings__(chat_id, user_id):
         return build_curr_disabled(chat_id)
 
-    DISABLE_HANDLER = CommandHandler("disable", disable, run_async=True)
-    DISABLE_MODULE_HANDLER = CommandHandler("disablemodule", disable_module, run_async=True)
-    ENABLE_HANDLER = CommandHandler("enable", enable, run_async=True)
-    ENABLE_MODULE_HANDLER = CommandHandler("enablemodule", enable_module, run_async=True)
-    COMMANDS_HANDLER = CommandHandler(["cmds", "disabled"], commands, run_async=True)
-    TOGGLE_HANDLER = CommandHandler("listcmds", list_cmds, run_async=True)
+    DISABLE_WORK = CommandHandler("disable", disable, run_async=True)
+    DISABLE_MODULE_WORK = CommandHandler("disablemodule", disable_module, run_async=True)
+    ENABLE_WORK = CommandHandler("enable", enable, run_async=True)
+    ENABLE_MODULE_WORK = CommandHandler("enablemodule", enable_module, run_async=True)
+    COMMANDS_WORK = CommandHandler(["cmds", "disabled"], commands, run_async=True)
+    TOGGLE_WORK = CommandHandler("listcmds", list_cmds, run_async=True)
 
-    dispatcher.add_handler(DISABLE_HANDLER)
-    dispatcher.add_handler(DISABLE_MODULE_HANDLER)
-    dispatcher.add_handler(ENABLE_HANDLER)
-    dispatcher.add_handler(ENABLE_MODULE_HANDLER)
-    dispatcher.add_handler(COMMANDS_HANDLER)
-    dispatcher.add_handler(TOGGLE_HANDLER)
+    dispatcher.add_handler(DISABLE_WORK)
+    dispatcher.add_handler(DISABLE_MODULE_WORK)
+    dispatcher.add_handler(ENABLE_WORK)
+    dispatcher.add_handler(ENABLE_MODULE_WORK)
+    dispatcher.add_handler(COMMANDS_WORK)
+    dispatcher.add_handler(TOGGLE_WORK)
 
     __help__ = f"""{ALKL}
    ⚔️ •/cmds-\n check the current status of disabled commands

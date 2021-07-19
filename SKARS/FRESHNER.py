@@ -218,35 +218,35 @@ __help__ = f"""{ALKL}
 ⚔️ •/ungignoreblue <word>-\n remove said command from global cleaning list
 """
 
-SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click, run_async=True)
-ADD_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("ignoreblue", add_bluetext_ignore, run_async=True)
-REMOVE_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("unignoreblue", remove_bluetext_ignore, run_async=True)
-ADD_CLEAN_BLUE_TEXT_GLOBAL_HANDLER = CommandHandler(
+SET_CLEAN_BLUE_TEXT_WORK = CommandHandler("cleanblue", set_blue_text_must_click, run_async=True)
+ADD_CLEAN_BLUE_TEXT_WORK = CommandHandler("ignoreblue", add_bluetext_ignore, run_async=True)
+REMOVE_CLEAN_BLUE_TEXT_WORK = CommandHandler("unignoreblue", remove_bluetext_ignore, run_async=True)
+ADD_CLEAN_BLUE_TEXT_GLOBAL_WORK = CommandHandler(
     "gignoreblue", add_bluetext_ignore_global, run_async=True
 )
-REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER = CommandHandler(
+REMOVE_CLEAN_BLUE_TEXT_GLOBAL_WORK = CommandHandler(
     "ungignoreblue", remove_bluetext_ignore_global, run_async=True
 )
-LIST_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("listblue", bluetext_ignore_list, run_async=True)
-CLEAN_BLUE_TEXT_HANDLER = MessageHandler(
+LIST_CLEAN_BLUE_TEXT_WORK = CommandHandler("listblue", bluetext_ignore_list, run_async=True)
+CLEAN_BLUE_TEXT_WORK = MessageHandler(
     Filters.command & Filters.chat_type.groups, clean_blue_text_must_click, run_async=True
 )
 
-dispatcher.add_handler(SET_CLEAN_BLUE_TEXT_HANDLER)
-dispatcher.add_handler(ADD_CLEAN_BLUE_TEXT_HANDLER)
-dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_HANDLER)
-dispatcher.add_handler(ADD_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
-dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
-dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_HANDLER)
-dispatcher.add_handler(CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)
+dispatcher.add_handler(SET_CLEAN_BLUE_TEXT_WORK)
+dispatcher.add_handler(ADD_CLEAN_BLUE_TEXT_WORK)
+dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_WORK)
+dispatcher.add_handler(ADD_CLEAN_BLUE_TEXT_GLOBAL_WORK)
+dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_WORK)
+dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_WORK)
+dispatcher.add_handler(CLEAN_BLUE_TEXT_WORK, BLUE_TEXT_CLEAN_GROUP)
 
 
 __handlers__ = [
-    SET_CLEAN_BLUE_TEXT_HANDLER,
-    ADD_CLEAN_BLUE_TEXT_HANDLER,
-    REMOVE_CLEAN_BLUE_TEXT_HANDLER,
-    ADD_CLEAN_BLUE_TEXT_GLOBAL_HANDLER,
-    REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER,
-    LIST_CLEAN_BLUE_TEXT_HANDLER,
-    (CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP),
+    SET_CLEAN_BLUE_TEXT_WORK,
+    ADD_CLEAN_BLUE_TEXT_WORK,
+    REMOVE_CLEAN_BLUE_TEXT_WORK,
+    ADD_CLEAN_BLUE_TEXT_GLOBAL_WORK,
+    REMOVE_CLEAN_BLUE_TEXT_GLOBAL_WORK,
+    LIST_CLEAN_BLUE_TEXT_WORK,
+    (CLEAN_BLUE_TEXT_WORK, BLUE_TEXT_CLEAN_GROUP),
 ]

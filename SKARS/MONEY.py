@@ -57,6 +57,6 @@ def convert(update: Update, context: CallbackContext):
 
 __help__ = f"""{ALKL}Money """
 
-CONVERTER_HANDLER = CommandHandler("cash", convert, run_async=True)
+CONVERTER_WORK = CommandHandler("cash", convert, run_async=True)
 
-dispatcher.add_handler(CONVERTER_HANDLER)
+dispatcher.add_handler(CONVERTER_WORK)

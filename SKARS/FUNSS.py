@@ -302,35 +302,35 @@ def deletion(update: Update, context: CallbackContext, delmsg):
 
 __help__ = f"""{ALKL}Fun"""
 
-SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
-RUNS_HANDLER = DisableAbleCommandHandler("runs", runs, run_async=True)
-SLAP_HANDLER = DisableAbleCommandHandler("slap", slap, run_async=True)
-PAT_HANDLER = DisableAbleCommandHandler("pat", pat, run_async=True)
-ROLL_HANDLER = DisableAbleCommandHandler("roll", roll, run_async=True)
-TOSS_HANDLER = DisableAbleCommandHandler("toss", toss, run_async=True)
-SHRUG_HANDLER = DisableAbleCommandHandler("shrug", shrug, run_async=True)
-BLUETEXT_HANDLER = DisableAbleCommandHandler("bluetext", bluetext, run_async=True)
-RLG_HANDLER = DisableAbleCommandHandler("rlg", rlg, run_async=True)
-DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide, run_async=True)
-EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball, run_async=True)
-TABLE_HANDLER = DisableAbleCommandHandler("table", table, run_async=True)
-SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, run_async=True)
-WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
+SANITIZE_WORK = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
+RUNS_WORK = DisableAbleCommandHandler("runs", runs, run_async=True)
+SLAP_WORK = DisableAbleCommandHandler("slap", slap, run_async=True)
+PAT_WORK = DisableAbleCommandHandler("pat", pat, run_async=True)
+ROLL_WORK = DisableAbleCommandHandler("roll", roll, run_async=True)
+TOSS_WORK = DisableAbleCommandHandler("toss", toss, run_async=True)
+SHRUG_WORK = DisableAbleCommandHandler("shrug", shrug, run_async=True)
+BLUETEXT_WORK = DisableAbleCommandHandler("bluetext", bluetext, run_async=True)
+RLG_WORK = DisableAbleCommandHandler("rlg", rlg, run_async=True)
+DECIDE_WORK = DisableAbleCommandHandler("decide", decide, run_async=True)
+EIGHTBALL_WORK = DisableAbleCommandHandler("8ball", eightball, run_async=True)
+TABLE_WORK = DisableAbleCommandHandler("table", table, run_async=True)
+SHOUT_WORK = DisableAbleCommandHandler("shout", shout, run_async=True)
+WEEBIFY_WORK = DisableAbleCommandHandler("weebify", weebify, run_async=True)
 
-dispatcher.add_handler(WEEBIFY_HANDLER)
-dispatcher.add_handler(SHOUT_HANDLER)
-dispatcher.add_handler(SANITIZE_HANDLER)
-dispatcher.add_handler(RUNS_HANDLER)
-dispatcher.add_handler(SLAP_HANDLER)
-dispatcher.add_handler(PAT_HANDLER)
-dispatcher.add_handler(ROLL_HANDLER)
-dispatcher.add_handler(TOSS_HANDLER)
-dispatcher.add_handler(SHRUG_HANDLER)
-dispatcher.add_handler(BLUETEXT_HANDLER)
-dispatcher.add_handler(RLG_HANDLER)
-dispatcher.add_handler(DECIDE_HANDLER)
-dispatcher.add_handler(EIGHTBALL_HANDLER)
-dispatcher.add_handler(TABLE_HANDLER)
+dispatcher.add_handler(WEEBIFY_WORK)
+dispatcher.add_handler(SHOUT_WORK)
+dispatcher.add_handler(SANITIZE_WORK)
+dispatcher.add_handler(RUNS_WORK)
+dispatcher.add_handler(SLAP_WORK)
+dispatcher.add_handler(PAT_WORK)
+dispatcher.add_handler(ROLL_WORK)
+dispatcher.add_handler(TOSS_WORK)
+dispatcher.add_handler(SHRUG_WORK)
+dispatcher.add_handler(BLUETEXT_WORK)
+dispatcher.add_handler(RLG_WORK)
+dispatcher.add_handler(DECIDE_WORK)
+dispatcher.add_handler(EIGHTBALL_WORK)
+dispatcher.add_handler(TABLE_WORK)
 
 __Hype_Scar_Var__ = "Fun"
 __command_list__ = [
@@ -350,18 +350,18 @@ __command_list__ = [
     "8ball",
 ]
 __handlers__ = [
-    RUNS_HANDLER,
-    SLAP_HANDLER,
-    PAT_HANDLER,
-    ROLL_HANDLER,
-    TOSS_HANDLER,
-    SHRUG_HANDLER,
-    BLUETEXT_HANDLER,
-    RLG_HANDLER,
-    DECIDE_HANDLER,
-    TABLE_HANDLER,
-    SANITIZE_HANDLER,
-    SHOUT_HANDLER,
-    WEEBIFY_HANDLER,
-    EIGHTBALL_HANDLER,
+    RUNS_WORK,
+    SLAP_WORK,
+    PAT_WORK,
+    ROLL_WORK,
+    TOSS_WORK,
+    SHRUG_WORK,
+    BLUETEXT_WORK,
+    RLG_WORK,
+    DECIDE_WORK,
+    TABLE_WORK,
+    SANITIZE_WORK,
+    SHOUT_WORK,
+    WEEBIFY_WORK,
+    EIGHTBALL_WORK,
 ]

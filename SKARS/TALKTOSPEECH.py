@@ -5,9 +5,15 @@ from SKARS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete
 
 __mod_name__ = "Talk 2 Speech"
+TTS = TTS =__help__ = f"""{ALKL}
+This is a module made to convert any text to speech.
+Try it with funny words lol!
 
+⚔️ •/talk <text>:
+    convert text to speech
+"""
 
-def tts(update: Update, context: CallbackContext):
+def talk(update: Update, context: CallbackContext):
     args = context.args
     message = update.effective_message
     chat = update.effective_chat
@@ -23,16 +29,16 @@ def tts(update: Update, context: CallbackContext):
         filename = datetime.now().strftime("%d%m%y-%H%M%S%f")
         update.message.chat.send_action(ChatAction.RECORD_AUDIO)
         lang = "ml"
-        tts = gTTS(delmsg, lang)
-        tts.save("k.mp3")
+        talk = gTTS(delmsg, lang)
+        talk.save("k.mp3")
         with open("k.mp3", "rb") as f:
             linelist = list(f)
             linecount = len(linelist)
         if linecount == 1:
             update.message.chat.send_action(ChatAction.RECORD_AUDIO)
             lang = "en"
-            tts = gTTS(delmsg, lang)
-            tts.save("k.mp3")
+            talk = gTTS(delmsg, lang)
+            talk.save("k.mp3")
         with open("k.mp3", "rb") as speech:
             delmsg = update.message.reply_voice(speech, quote=False)
 
@@ -40,23 +46,16 @@ def tts(update: Update, context: CallbackContext):
 
     else:
         delmsg = message.reply_text(
-        "Reply a message or give something like:\n`/tts <message>`",
+        "Reply a message or give something like:\n`/talk <message>`",
         parse_mode = ParseMode.MARKDOWN
         )
 
-    cleartime = get_clearcmd(chat.id, "tts")
+    cleartime = get_clearcmd(chat.id, "talk")
 
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-
-TTS_HANDLER = DisableAbleCommandHandler("tts", tts, run_async=True)
-dispatcher.add_handler(TTS_HANDLER)
-
-
-__help__ = f"""{ALKL}
- *Text to speech:*
- • `/tts <text>`: convert text to speech
-"""
-__handlers__ = [TTS_HANDLER]
+TTS_WORK = DisableAbleCommandHandler("talk", talk, run_async=True)
+__handlers__ = [TTS_WORK]
+dispatcher.add_handler(TTS_WORK)

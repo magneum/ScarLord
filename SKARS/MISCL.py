@@ -80,14 +80,14 @@ __help__ = f"""{ALKL}
  - /markdownhelp: quick summary of how markdown works in telegram - can only be called in private chats.
 """
 
-ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
-MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help, filters=Filters.private)
+ID_WORK = DisableAbleCommandHandler("id", get_id, pass_args=True)
+MD_HELP_WORK = CommandHandler("markdownhelp", markdown_help, filters=Filters.private)
 
 
-dispatcher.add_handler(ID_HANDLER)
-dispatcher.add_handler(MD_HELP_HANDLER)
+dispatcher.add_handler(ID_WORK)
+dispatcher.add_handler(MD_HELP_WORK)
 
 
 
 __command_list__ = ["id", "markdownhelp"]
-__handlers__ = [ID_HANDLER,  MD_HELP_HANDLER]
+__handlers__ = [ID_WORK,  MD_HELP_WORK]

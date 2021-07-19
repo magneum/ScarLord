@@ -61,5 +61,5 @@ def purge(update: Update, context: CallbackContext):
 
 
 
-PURGE_HANDLER = CommandHandler("purge", purge, filters=Filters.chat_type.groups, pass_args=True)
-dispatcher.add_handler(PURGE_HANDLER)
+PURGE_WORK = CommandHandler("purge", purge, filters=Filters.chat_type.groups, pass_args=True)
+dispatcher.add_handler(PURGE_WORK)

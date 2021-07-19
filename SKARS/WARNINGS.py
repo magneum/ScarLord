@@ -24,7 +24,7 @@ from SKARSHOTS.approve_sql import is_approved
 __mod_name__ = "🗯 ᴡᴀʀɴɪɴɢꜱ"
 
 
-WARN_HANDLER_GROUP = 9
+WARN_WORK_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = f"{ALKL}<b>Current warning filters in this chat:</b>\n"
 def warn(
     user: User, chat: Chat, reason: str, message: Message, warner: User = None
@@ -254,9 +254,9 @@ def add_warn_filter(update: Update, context: CallbackContext):
         return
 
     # Note: perhaps handlers can be removed somehow using sql.get_chat_filters
-    for handler in dispatcher.handlers.get(WARN_HANDLER_GROUP, []):
+    for handler in dispatcher.handlers.get(WARN_WORK_GROUP, []):
         if handler.filters == (keyword, chat.id):
-            dispatcher.remove_handler(handler, WARN_HANDLER_GROUP)
+            dispatcher.remove_handler(handler, WARN_WORK_GROUP)
 
     sql.add_warn_filter(chat.id, keyword, content)
 
@@ -466,34 +466,34 @@ be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is
 
 
 
-WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
-RESET_WARN_HANDLER = CommandHandler(
+WARN_WORK = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
+RESET_WARN_WORK = CommandHandler(
     ["resetwarn", "resetwarns"], reset_warns, filters=Filters.chat_type.groups, run_async=True
 )
-CALLBACK_QUERY_HANDLER = CallbackQueryHandler(button, pattern=r"rm_warn")
-MYWARNS_HANDLER = DisableAbleCommandHandler("warns", warns, filters=Filters.chat_type.groups, run_async=True)
-ADD_WARN_HANDLER = CommandHandler("addwarn", add_warn_filter, filters=Filters.chat_type.groups, run_async=True)
-RM_WARN_HANDLER = CommandHandler(
+CALLBACK_QUERY_WORK = CallbackQueryHandler(button, pattern=r"rm_warn")
+MYWARNS_WORK = DisableAbleCommandHandler("warns", warns, filters=Filters.chat_type.groups, run_async=True)
+ADD_WARN_WORK = CommandHandler("addwarn", add_warn_filter, filters=Filters.chat_type.groups, run_async=True)
+RM_WARN_WORK = CommandHandler(
     ["nowarn", "stopwarn"], remove_warn_filter, filters=Filters.chat_type.groups
 )
-LIST_WARN_HANDLER = DisableAbleCommandHandler(
+LIST_WARN_WORK = DisableAbleCommandHandler(
     ["warnlist", "warnfilters"], list_warn_filters, filters=Filters.chat_type.groups, admin_ok=True, run_async=True
 )
-WARN_FILTER_HANDLER = MessageHandler(
+WARN_FILTER_WORK = MessageHandler(
     CustomFilters.has_text & Filters.chat_type.groups, reply_filter, run_async=True
 )
-WARN_LIMIT_HANDLER = CommandHandler("warnlimit", set_warn_limit, filters=Filters.chat_type.groups, run_async=True)
-WARN_STRENGTH_HANDLER = CommandHandler(
+WARN_LIMIT_WORK = CommandHandler("warnlimit", set_warn_limit, filters=Filters.chat_type.groups, run_async=True)
+WARN_STRENGTH_WORK = CommandHandler(
     "strongwarn", set_warn_strength, filters=Filters.chat_type.groups, run_async=True
 )
 
-dispatcher.add_handler(WARN_HANDLER)
-dispatcher.add_handler(CALLBACK_QUERY_HANDLER)
-dispatcher.add_handler(RESET_WARN_HANDLER)
-dispatcher.add_handler(MYWARNS_HANDLER)
-dispatcher.add_handler(ADD_WARN_HANDLER)
-dispatcher.add_handler(RM_WARN_HANDLER)
-dispatcher.add_handler(LIST_WARN_HANDLER)
-dispatcher.add_handler(WARN_LIMIT_HANDLER)
-dispatcher.add_handler(WARN_STRENGTH_HANDLER)
-dispatcher.add_handler(WARN_FILTER_HANDLER, WARN_HANDLER_GROUP)
+dispatcher.add_handler(WARN_WORK)
+dispatcher.add_handler(CALLBACK_QUERY_WORK)
+dispatcher.add_handler(RESET_WARN_WORK)
+dispatcher.add_handler(MYWARNS_WORK)
+dispatcher.add_handler(ADD_WARN_WORK)
+dispatcher.add_handler(RM_WARN_WORK)
+dispatcher.add_handler(LIST_WARN_WORK)
+dispatcher.add_handler(WARN_LIMIT_WORK)
+dispatcher.add_handler(WARN_STRENGTH_WORK)
+dispatcher.add_handler(WARN_FILTER_WORK, WARN_WORK_GROUP)

@@ -477,29 +477,29 @@ __help__ = f"""{ALKL}
 ⚔️ •/zombies-\n scan and clean zombies
 """
 
-ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
+ADMINLIST_WORK = DisableAbleCommandHandler("admins", adminlist, run_async=True)
 
-PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.chat_type.groups, run_async=True)
-UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.chat_type.groups, run_async=True)
+PIN_WORK = CommandHandler("pin", pin, filters=Filters.chat_type.groups, run_async=True)
+UNPIN_WORK = CommandHandler("unpin", unpin, filters=Filters.chat_type.groups, run_async=True)
 
-INVITE_HANDLER = DisableAbleCommandHandler(["invitelink", "link"], invite, run_async=True)
+INVITE_WORK = DisableAbleCommandHandler(["invitelink", "link"], invite, run_async=True)
 
-PROMOTE_HANDLER = DisableAbleCommandHandler("promote", promote, run_async=True)
-DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
+PROMOTE_WORK = DisableAbleCommandHandler("promote", promote, run_async=True)
+DEMOTE_WORK = DisableAbleCommandHandler("demote", demote, run_async=True)
 
-SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
-ADMIN_REFRESH_HANDLER = CommandHandler(
+SET_TITLE_WORK = CommandHandler("title", set_title, run_async=True)
+ADMIN_REFRESH_WORK = CommandHandler(
     "admincache", refresh_admin, filters=Filters.chat_type.groups
 )
 
-dispatcher.add_handler(ADMINLIST_HANDLER)
-dispatcher.add_handler(PIN_HANDLER)
-dispatcher.add_handler(UNPIN_HANDLER)
-dispatcher.add_handler(INVITE_HANDLER)
-dispatcher.add_handler(PROMOTE_HANDLER)
-dispatcher.add_handler(DEMOTE_HANDLER)
-dispatcher.add_handler(SET_TITLE_HANDLER)
-dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
+dispatcher.add_handler(ADMINLIST_WORK)
+dispatcher.add_handler(PIN_WORK)
+dispatcher.add_handler(UNPIN_WORK)
+dispatcher.add_handler(INVITE_WORK)
+dispatcher.add_handler(PROMOTE_WORK)
+dispatcher.add_handler(DEMOTE_WORK)
+dispatcher.add_handler(SET_TITLE_WORK)
+dispatcher.add_handler(ADMIN_REFRESH_WORK)
 
 
 __command_list__ = [
@@ -511,12 +511,12 @@ __command_list__ = [
     "admincache",
 ]
 __handlers__ = [
-    ADMINLIST_HANDLER,
-    PIN_HANDLER,
-    UNPIN_HANDLER,
-    INVITE_HANDLER,
-    PROMOTE_HANDLER,
-    DEMOTE_HANDLER,
-    SET_TITLE_HANDLER,
-    ADMIN_REFRESH_HANDLER,
+    ADMINLIST_WORK,
+    PIN_WORK,
+    UNPIN_WORK,
+    INVITE_WORK,
+    PROMOTE_WORK,
+    DEMOTE_WORK,
+    SET_TITLE_WORK,
+    ADMIN_REFRESH_WORK,
 ]

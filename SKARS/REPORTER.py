@@ -261,20 +261,20 @@ __help__ = f"""{ALKL}
    • If in group, toggles that groups's status.
 """
 
-SETTING_HANDLER = CommandHandler("reports", report_setting, run_async=True)
-REPORT_HANDLER = CommandHandler("report", report, filters=Filters.chat_type.groups, run_async=True)
-ADMIN_REPORT_HANDLER = MessageHandler(Filters.regex(r"(?i)@admin(s)?"), report)
+SETTING_WORK = CommandHandler("reports", report_setting, run_async=True)
+REPORT_WORK = CommandHandler("report", report, filters=Filters.chat_type.groups, run_async=True)
+ADMIN_REPORT_WORK = MessageHandler(Filters.regex(r"(?i)@admin(s)?"), report)
 
-REPORT_BUTTON_USER_HANDLER = CallbackQueryHandler(buttons, pattern=r"report_")
-dispatcher.add_handler(REPORT_BUTTON_USER_HANDLER)
+REPORT_BUTTON_USER_WORK = CallbackQueryHandler(buttons, pattern=r"report_")
+dispatcher.add_handler(REPORT_BUTTON_USER_WORK)
 
-dispatcher.add_handler(SETTING_HANDLER)
-dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
-dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
+dispatcher.add_handler(SETTING_WORK)
+dispatcher.add_handler(REPORT_WORK, REPORT_GROUP)
+dispatcher.add_handler(ADMIN_REPORT_WORK, REPORT_GROUP)
 
 
 __handlers__ = [
-    (REPORT_HANDLER, REPORT_GROUP),
-    (ADMIN_REPORT_HANDLER, REPORT_GROUP),
-    (SETTING_HANDLER),
+    (REPORT_WORK, REPORT_GROUP),
+    (ADMIN_REPORT_WORK, REPORT_GROUP),
+    (SETTING_WORK),
 ]

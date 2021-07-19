@@ -94,12 +94,12 @@ def gettime(update: Update, context: CallbackContext):
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-TIME_HANDLER = DisableAbleCommandHandler("time", gettime, run_async=True)
+TIME_WORK = DisableAbleCommandHandler("time", gettime, run_async=True)
 
-dispatcher.add_handler(TIME_HANDLER)
+dispatcher.add_handler(TIME_WORK)
 
 
 __help__ = f"""{ALKL}Clock"""
 __Hype_Scar_Var__ = "Time"
 __command_list__ = ["time"]
-__handlers__ = [TIME_HANDLER]
+__handlers__ = [TIME_WORK]

@@ -204,8 +204,8 @@
 #         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-# REVERSE_HANDLER = DisableAbleCommandHandler(
+# REVERSE_WORK = DisableAbleCommandHandler(
 #     "reverse", reverse, admin_ok=True, run_async=True
 # )
 
-# dispatcher.add_handler(REVERSE_HANDLER)
+# dispatcher.add_handler(REVERSE_WORK)

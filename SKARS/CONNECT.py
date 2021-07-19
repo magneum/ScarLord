@@ -390,18 +390,18 @@ This allows you to connect to a chat's database, and add things to it without th
  • /allowconnect <yes/no>: allow a user to connect to a chat
 """
 
-CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)
-CONNECTION_CHAT_HANDLER = CommandHandler("connection", connection_chat)
-DISCONNECT_CHAT_HANDLER = CommandHandler("disconnect", disconnect_chat)
-ALLOW_CONNECTIONS_HANDLER = CommandHandler(
+CONNECT_CHAT_WORK = CommandHandler("connect", connect_chat, pass_args=True)
+CONNECTION_CHAT_WORK = CommandHandler("connection", connection_chat)
+DISCONNECT_CHAT_WORK = CommandHandler("disconnect", disconnect_chat)
+ALLOW_CONNECTIONS_WORK = CommandHandler(
     "allowconnect", allow_connections, pass_args=True,
 )
-HELP_CONNECT_CHAT_HANDLER = CommandHandler("helpconnect", help_connect_chat)
-CONNECT_BTN_HANDLER = CallbackQueryHandler(connect_button, pattern=r"connect")
+HELP_CONNECT_CHAT_WORK = CommandHandler("helpconnect", help_connect_chat)
+CONNECT_BTN_WORK = CallbackQueryHandler(connect_button, pattern=r"connect")
 
-dispatcher.add_handler(CONNECT_CHAT_HANDLER)
-dispatcher.add_handler(CONNECTION_CHAT_HANDLER)
-dispatcher.add_handler(DISCONNECT_CHAT_HANDLER)
-dispatcher.add_handler(ALLOW_CONNECTIONS_HANDLER)
-dispatcher.add_handler(HELP_CONNECT_CHAT_HANDLER)
-dispatcher.add_handler(CONNECT_BTN_HANDLER)
+dispatcher.add_handler(CONNECT_CHAT_WORK)
+dispatcher.add_handler(CONNECTION_CHAT_WORK)
+dispatcher.add_handler(DISCONNECT_CHAT_WORK)
+dispatcher.add_handler(ALLOW_CONNECTIONS_WORK)
+dispatcher.add_handler(HELP_CONNECT_CHAT_WORK)
+dispatcher.add_handler(CONNECT_BTN_WORK)

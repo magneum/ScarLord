@@ -162,17 +162,17 @@ def __migrate__(old_chat_id, new_chat_id):
 
 __help__ = f"""{ALKL} wait"""
 
-BROADCAST_HANDLER = CommandHandler(
+BROADCAST_WORK = CommandHandler(
     ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast, run_async=True
 )
-USER_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, log_user, run_async=True)
-CHAT_CHECKER_HANDLER = MessageHandler(Filters.all & Filters.chat_type.groups, chat_checker, run_async=True)
-CHATLIST_HANDLER = CommandHandler(["groups", "chatlist"], chats, run_async=True)
+USER_WORK = MessageHandler(Filters.all & Filters.chat_type.groups, log_user, run_async=True)
+CHAT_CHECKER_WORK = MessageHandler(Filters.all & Filters.chat_type.groups, chat_checker, run_async=True)
+CHATLIST_WORK = CommandHandler(["groups", "chatlist"], chats, run_async=True)
 
-dispatcher.add_handler(USER_HANDLER, USERS_GROUP)
-dispatcher.add_handler(BROADCAST_HANDLER)
-dispatcher.add_handler(CHATLIST_HANDLER)
-dispatcher.add_handler(CHAT_CHECKER_HANDLER, CHAT_GROUP)
+dispatcher.add_handler(USER_WORK, USERS_GROUP)
+dispatcher.add_handler(BROADCAST_WORK)
+dispatcher.add_handler(CHATLIST_WORK)
+dispatcher.add_handler(CHAT_CHECKER_WORK, CHAT_GROUP)
 
 
-__handlers__ = [(USER_HANDLER, USERS_GROUP), BROADCAST_HANDLER, CHATLIST_HANDLER]
+__handlers__ = [(USER_WORK, USERS_GROUP), BROADCAST_WORK, CHATLIST_WORK]

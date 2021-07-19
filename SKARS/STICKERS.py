@@ -3,6 +3,17 @@ from SƈαɾLσɾԃ import dispatcher
 from SKARS.TURNOFF import DisableAbleCommandHandler
 
 __mod_name__ = "Stickers"
+STICK = STICK = __help__ = f"""{ALKL}
+⚔️ •/stickers:
+    Find stickers for given term on combot sticker catalogue
+⚔️ •/stickerid: 
+    reply to a sticker to me to tell you its file ID.
+⚔️ •/kang:
+    reply to a sticker to add it to your pack.
+⚔️ •/getsticker:
+    reply to a sticker to me to upload its raw PNG file.
+"""
+
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
 
@@ -436,15 +447,14 @@ def makepack_internal(
         msg.reply_text("Failed to create sticker pack. Possibly due to blek mejik.")
 
 
-__help__ = f"""{ALKL}STICKERS"""
 
 __Hype_Scar_Var__ = "Stickers"
-STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)
-GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
-KANG_HANDLER = DisableAbleCommandHandler("kang", kang, admin_ok=True, run_async=True)
-STICKERS_HANDLER = DisableAbleCommandHandler("stickers", cb_sticker, run_async=True)
+STICKERID_WORK = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)
+GETSTICKER_WORK = DisableAbleCommandHandler("getsticker", getsticker)
+KANG_WORK = DisableAbleCommandHandler("kang", kang, admin_ok=True, run_async=True)
+STICKERS_WORK = DisableAbleCommandHandler("stickers", cb_sticker, run_async=True)
 
-dispatcher.add_handler(STICKERS_HANDLER)
-dispatcher.add_handler(STICKERID_HANDLER)
-dispatcher.add_handler(GETSTICKER_HANDLER)
-dispatcher.add_handler(KANG_HANDLER)
+dispatcher.add_handler(STICKERS_WORK)
+dispatcher.add_handler(STICKERID_WORK)
+dispatcher.add_handler(GETSTICKER_WORK)
+dispatcher.add_handler(KANG_WORK)

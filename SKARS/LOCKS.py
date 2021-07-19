@@ -569,17 +569,17 @@ Locking bots will stop non-admins from adding bots to the chat.
 
 
 
-LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
-LOCK_HANDLER = CommandHandler("lock", lock)  # , filters=Filters.chat_type.groups, run_async=True)
-UNLOCK_HANDLER = CommandHandler(
+LOCKTYPES_WORK = DisableAbleCommandHandler("locktypes", locktypes, run_async=True)
+LOCK_WORK = CommandHandler("lock", lock)  # , filters=Filters.chat_type.groups, run_async=True)
+UNLOCK_WORK = CommandHandler(
     "unlock", unlock, run_async=True
 )  # , filters=Filters.chat_type.groups)
-LOCKED_HANDLER = CommandHandler("locks", list_locks)  # , filters=Filters.chat_type.groups, run_async=True)
+LOCKED_WORK = CommandHandler("locks", list_locks)  # , filters=Filters.chat_type.groups, run_async=True)
 
-dispatcher.add_handler(LOCK_HANDLER)
-dispatcher.add_handler(UNLOCK_HANDLER)
-dispatcher.add_handler(LOCKTYPES_HANDLER)
-dispatcher.add_handler(LOCKED_HANDLER)
+dispatcher.add_handler(LOCK_WORK)
+dispatcher.add_handler(UNLOCK_WORK)
+dispatcher.add_handler(LOCKTYPES_WORK)
+dispatcher.add_handler(LOCKED_WORK)
 
 dispatcher.add_handler(
     MessageHandler(Filters.all & Filters.chat_type.groups, del_lockables), PERM_GROUP

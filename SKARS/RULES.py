@@ -6,6 +6,13 @@ from ꜰᴜɴᴄᴘᴏᴅ.string_handling import markdown_parser
 
 
 __mod_name__ = "📠 ʀᴜʟᴇꜱ"
+__help__ = f"""{ALKL}
+⚔️ •/rules-\n get the rules for this chat.
+
+*Admins only*-\n
+⚔️ •/setrules <your rules here>-\n set the rules for this chat.
+⚔️ •/clearrules-\n clear the rules for this chat.
+"""
 
 def get_rules(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
@@ -118,20 +125,14 @@ def __chat_settings__(chat_id, user_id):
     return f"{ALKL}This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
 
 
-__help__ = f"""{ALKL}
-⚔️ •/rules-\n get the rules for this chat.
-
-*Admins only*-\n
-⚔️ •/setrules <your rules here>-\n set the rules for this chat.
-⚔️ •/clearrules-\n clear the rules for this chat.
-"""
 
 
 
-GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.chat_type.groups, run_async=True)
-SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.chat_type.groups, run_async=True)
-RESET_RULES_HANDLER = CommandHandler("clearrules", clear_rules, filters=Filters.chat_type.groups, run_async=True)
 
-dispatcher.add_handler(GET_RULES_HANDLER)
-dispatcher.add_handler(SET_RULES_HANDLER)
-dispatcher.add_handler(RESET_RULES_HANDLER)
+GET_RULES_WORK = CommandHandler("rules", get_rules, filters=Filters.chat_type.groups, run_async=True)
+SET_RULES_WORK = CommandHandler("setrules", set_rules, filters=Filters.chat_type.groups, run_async=True)
+RESET_RULES_WORK = CommandHandler("clearrules", clear_rules, filters=Filters.chat_type.groups, run_async=True)
+
+dispatcher.add_handler(GET_RULES_WORK)
+dispatcher.add_handler(SET_RULES_WORK)
+dispatcher.add_handler(RESET_RULES_WORK)

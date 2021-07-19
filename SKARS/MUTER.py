@@ -244,13 +244,13 @@ __help__ = f"""{ALKL}
 ⚔️ •/unmute <userhandle>-\n unmutes a user. Can also be used as a reply, muting the replied to user.
 """
 
-MUTE_HANDLER = CommandHandler("mute", mute, run_async=True)
-UNMUTE_HANDLER = CommandHandler("unmute", unmute, run_async=True)
-TEMPMUTE_HANDLER = CommandHandler(["tmute", "tempmute"], temp_mute, run_async=True)
+MUTE_WORK = CommandHandler("mute", mute, run_async=True)
+UNMUTE_WORK = CommandHandler("unmute", unmute, run_async=True)
+TEMPMUTE_WORK = CommandHandler(["tmute", "tempmute"], temp_mute, run_async=True)
 
-dispatcher.add_handler(MUTE_HANDLER)
-dispatcher.add_handler(UNMUTE_HANDLER)
-dispatcher.add_handler(TEMPMUTE_HANDLER)
+dispatcher.add_handler(MUTE_WORK)
+dispatcher.add_handler(UNMUTE_WORK)
+dispatcher.add_handler(TEMPMUTE_WORK)
 
 
-__handlers__ = [MUTE_HANDLER, UNMUTE_HANDLER, TEMPMUTE_HANDLER]
+__handlers__ = [MUTE_WORK, UNMUTE_WORK, TEMPMUTE_WORK]

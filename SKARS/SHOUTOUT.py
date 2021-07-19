@@ -18,9 +18,9 @@ def shout(update: Update, context: CallbackContext):
     return update.effective_message.reply_text(msg, parse_mode="MARKDOWN")
 
 
-SHOUT_HANDLER = DisableAbleCommandHandler("shout", shout, run_async=True)
+SHOUT_WORK = DisableAbleCommandHandler("shout", shout, run_async=True)
 
-dispatcher.add_handler(SHOUT_HANDLER)
+dispatcher.add_handler(SHOUT_WORK)
 
 __command_list__ = ["shout"]
-__handlers__ = [SHOUT_HANDLER]
+__handlers__ = [SHOUT_WORK]
