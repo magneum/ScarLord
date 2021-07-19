@@ -145,5 +145,9 @@ def weather(update: Update, context: CallbackContext):
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
+
+__help__ = f"""{ALKL}Climate"""
+
+
 WEATHER_HANDLER = CommandHandler(["weather"], weather, run_async=True)
 dispatcher.add_handler(WEATHER_HANDLER)

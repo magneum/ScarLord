@@ -2298,7 +2298,7 @@ def get_chat(chat_id, chat_data):
 
 def fed_owner_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        """*👑 Fed Owner Only:*
+        f"""{ALKL}*👑 Fed Owner Only:*
  • `/newfed <fed_name>`*:* Creates a Federation, One allowed per user
  • `/renamefed <fed_id> <new_fed_name>`*:* Renames the fed id to a new name
  • `/delfed <fed_id>`*:* Delete a Federation, and any information related to it. Will not cancel blocked users
@@ -2316,7 +2316,7 @@ def fed_owner_help(update: Update, context: CallbackContext):
 
 def fed_admin_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        """*🔱 Fed Admins:*
+        f"""{ALKL}*🔱 Fed Admins:*
  • `/fban <user> <reason>`*:* Fed bans a user
  • `/unfban <user> <reason>`*:* Removes a user from a fed ban
  • `/fedinfo <fed_id>`*:* Information about the specified Federation
@@ -2343,7 +2343,7 @@ def fed_user_help(update: Update, context: CallbackContext):
 
 __Hype_Scar_Var__ = "Federations"
 
-__help__ = """
+__help__ = f"""{ALKL}
 Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
 But then you have many groups, and you don't want this spammer to be in one of your groups - how can you deal? Do you have to manually block it, in all your groups?\n
 *No longer!* With Federation, you can make a ban in one chat overlap with all other chats.\n

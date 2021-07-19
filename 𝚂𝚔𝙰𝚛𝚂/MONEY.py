@@ -54,6 +54,7 @@ def convert(update: Update, context: CallbackContext):
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
+__help__ = f"""{ALKL}Money """
 
 CONVERTER_HANDLER = CommandHandler("cash", convert, run_async=True)
 

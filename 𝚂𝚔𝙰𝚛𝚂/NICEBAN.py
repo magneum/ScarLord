@@ -497,7 +497,7 @@ def __chat_settings__(chat_id, user_id):
 
 
 
-__help__ = "GBAN"
+__help__ = f"""{ALKL}Global Ban"""
 
 GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
 UNGBAN_HANDLER = CommandHandler("ungban", ungban, run_async=True)

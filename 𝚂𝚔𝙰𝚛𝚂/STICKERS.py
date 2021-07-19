@@ -434,7 +434,7 @@ def makepack_internal(
         msg.reply_text("Failed to create sticker pack. Possibly due to blek mejik.")
 
 
-__help__ = "STICKERS"
+__help__ = f"""{ALKL}STICKERS"""
 
 __Hype_Scar_Var__ = "Stickers"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)

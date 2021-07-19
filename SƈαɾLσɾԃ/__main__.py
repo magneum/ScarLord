@@ -31,7 +31,7 @@ for module_name in ALL_MODULES:
 LOGGER.info("—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—")
 LOGGER.info("")
 LOGGER.info("🔥==================================================🔥")
-LOGGER.info("🦀 Hell Yea.. ӄʟǟա ʀօɮօȶ IS FUCKING READY.🦀")
+LOGGER.info("⚔️ Hell Yea.. ӄʟǟա ʀօɮօȶ IS FUCKING READY.⚔️")
 updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)   
 LOGGER.info("Successfully loaded modules: \n" + str(ALL_MODULES))
 LOGGER.info("")

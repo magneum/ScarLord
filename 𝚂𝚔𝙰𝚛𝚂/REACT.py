@@ -217,9 +217,12 @@ def react(update: Update, context: CallbackContext):
         message.reply_text(react)
 
 
+
 REACT_HANDLER = DisableAbleCommandHandler("react", react, run_async=True)
 
 dispatcher.add_handler(REACT_HANDLER)
+
+__help__ = f"""{ALKL} reactions"""
 
 __command_list__ = ["react"]
 __handlers__ = [REACT_HANDLER]

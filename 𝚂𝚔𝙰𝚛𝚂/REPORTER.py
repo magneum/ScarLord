@@ -251,12 +251,12 @@ def buttons(update: Update, context: CallbackContext):
 
 
 __help__ = f"""{ALKL}
-🦀 •/report <reason>-\n reply to a message to report it to admins.
-🦀 •@admin-\n reply to a message to report it to admins.
+⚔️ •/report <reason>-\n reply to a message to report it to admins.
+⚔️ •@admin-\n reply to a message to report it to admins.
 *NOTE*-\n Neither of these will get triggered if used by admins.
 
 *Admins only*-\n
-🦀 •/reports <on/off>-\n change report setting, or view current status.
+⚔️ •/reports <on/off>-\n change report setting, or view current status.
    • If done in pm, toggles your status.
    • If in group, toggles that groups's status.
 """

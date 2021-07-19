@@ -59,7 +59,7 @@ def purge(update: Update, context: CallbackContext):
     return ""
 
 
-
+__help__ = f"""{ALKL} Purger"""
 
 
 PURGE_HANDLER = CommandHandler("purge", purge, filters=Filters.chat_type.groups, pass_args=True)

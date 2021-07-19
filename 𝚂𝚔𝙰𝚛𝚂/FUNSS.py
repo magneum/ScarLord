@@ -299,7 +299,7 @@ def deletion(update: Update, context: CallbackContext, delmsg):
 
 
 
-__help__ = "FUN"
+__help__ = f"""{ALKL}Fun"""
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize, run_async=True)
 RUNS_HANDLER = DisableAbleCommandHandler("runs", runs, run_async=True)

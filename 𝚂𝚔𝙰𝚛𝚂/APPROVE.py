@@ -188,7 +188,7 @@ def unapproveall_btn(update: Update, context: CallbackContext):
             query.answer("You need to be admin to do this.")
 
 
-__help__ = "APPROVE"
+__help__ = f"""{ALKL}Approve"""
 
 APPROVE = DisableAbleCommandHandler("approve", approve, run_async=True)
 DISAPPROVE = DisableAbleCommandHandler("unapprove", disapprove, run_async=True)

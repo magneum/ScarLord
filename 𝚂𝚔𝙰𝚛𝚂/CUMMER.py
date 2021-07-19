@@ -922,17 +922,17 @@ def user_button(update: Update, context: CallbackContext):
 WELC_HELP_TXT = (
     "Your group's welcome/goodbye messages can be personalised in multiple ways. If you want the messages"
     " to be individually generated, like the default welcome message is, you can use *these* variables:\n"
-    "🦀 •{first}-\n this represents the user's *first* name\n"
-    "🦀 •{last}-\n this represents the user's *last* name. Defaults to *first name* if user has no "
+    "⚔️ •{first}-\n this represents the user's *first* name\n"
+    "⚔️ •{last}-\n this represents the user's *last* name. Defaults to *first name* if user has no "
     "last name.\n"
-    "🦀 •{fullname}-\n this represents the user's *full* name. Defaults to *first name* if user has no "
+    "⚔️ •{fullname}-\n this represents the user's *full* name. Defaults to *first name* if user has no "
     "last name.\n"
-    "🦀 •{username}-\n this represents the user's *username*. Defaults to a *mention* of the user's "
+    "⚔️ •{username}-\n this represents the user's *username*. Defaults to a *mention* of the user's "
     "first name if has no username.\n"
-    "🦀 •{mention}-\n this simply *mentions* a user - tagging them with their first name.\n"
-    "🦀 •{id}-\n this represents the user's *id*\n"
-    "🦀 •{count}-\n this represents the user's *member number*.\n"
-    "🦀 •{chatname}-\n this represents the *current chat name*.\n"
+    "⚔️ •{mention}-\n this simply *mentions* a user - tagging them with their first name.\n"
+    "⚔️ •{id}-\n this represents the user's *id*\n"
+    "⚔️ •{count}-\n this represents the user's *member number*.\n"
+    "⚔️ •{chatname}-\n this represents the *current chat name*.\n"
     "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
     "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
     "Buttons are also supported, so you can make your welcomes look awesome with some nice intro "
@@ -948,9 +948,9 @@ WELC_HELP_TXT = (
 WELC_MUTE_HELP_TXT = (
     "You can get the bot to mute new people who join your group and hence prevent spambots from flooding your group. "
     "The following options are possible:\n"
-    "🦀 •/welcomemute soft-\n restricts new members from sending media for 24 hours.\n"
-    "🦀 •/welcomemute strong-\n mutes new members till they tap on a button thereby verifying they're human.\n"
-    "🦀 •/welcomemute off-\n turns off welcomemute.\n"
+    "⚔️ •/welcomemute soft-\n restricts new members from sending media for 24 hours.\n"
+    "⚔️ •/welcomemute strong-\n mutes new members till they tap on a button thereby verifying they're human.\n"
+    "⚔️ •/welcomemute off-\n turns off welcomemute.\n"
     "*Note*-\n Strong mode kicks a user from the chat if they dont verify in 120seconds. They can always rejoin though"
 )
 
@@ -986,21 +986,21 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = f"""{ALKL}
 *Admins only:*
-🦀 •/welcome <on/off>-\n enable/disable welcome messages.
-🦀 •/welcome-\n shows current welcome settings.
-🦀 •/welcome noformat-\n shows current welcome settings, without the formatting - useful to recycle your welcome messages!
-🦀 •/goodbye-\n same usage and args as `/welcome`.
-🦀 •/setwelcome <sometext>-\n set a custom welcome message. If used replying to media, uses that media.
-🦀 •/setgoodbye <sometext>-\n set a custom goodbye message. If used replying to media, uses that media.
-🦀 •/resetwelcome-\n reset to the default welcome message.
-🦀 •/resetgoodbye-\n reset to the default goodbye message.
-🦀 •/cleanwelcome <on/off>-\n On new member, try to delete the previous welcome message to avoid spamming the chat.
-🦀 •/welcomemutehelp-\n gives information about welcome mutes.
-🦀 •/cleanservice <on/off-\n deletes telegrams welcome/left service messages.
+⚔️ •/welcome <on/off>-\n enable/disable welcome messages.
+⚔️ •/welcome-\n shows current welcome settings.
+⚔️ •/welcome noformat-\n shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+⚔️ •/goodbye-\n same usage and args as `/welcome`.
+⚔️ •/setwelcome <sometext>-\n set a custom welcome message. If used replying to media, uses that media.
+⚔️ •/setgoodbye <sometext>-\n set a custom goodbye message. If used replying to media, uses that media.
+⚔️ •/resetwelcome-\n reset to the default welcome message.
+⚔️ •/resetgoodbye-\n reset to the default goodbye message.
+⚔️ •/cleanwelcome <on/off>-\n On new member, try to delete the previous welcome message to avoid spamming the chat.
+⚔️ •/welcomemutehelp-\n gives information about welcome mutes.
+⚔️ •/cleanservice <on/off-\n deletes telegrams welcome/left service messages.
  *Example:*
 user joined chat, user left chat.
 *Welcome markdown:*
-🦀 •/welcomehelp-\n view more formatting information for custom welcome/goodbye messages.
+⚔️ •/welcomehelp-\n view more formatting information for custom welcome/goodbye messages.
 """
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member, run_async=True)
 LEFT_MEM_HANDLER = MessageHandler(Filters.status_update.left_chat_member, left_member, run_async=True)

@@ -481,6 +481,8 @@ def __stats__():
     )
 
 
+__help__ = f"""{ALKL} Stickers Blacklist"""
+
 __Hype_Scar_Var__ = "Stickers Blacklist"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(

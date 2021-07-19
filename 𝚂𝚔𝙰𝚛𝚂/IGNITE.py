@@ -68,7 +68,7 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup([[
         InlineKeyboardButton(
-                    text="ɢɛȶ ӄʟǟա🦀ʀօɮօȶ քօաɛʀֆ ռօա",
+                    text="ɢɛȶ ӄʟǟա⚔️ʀօɮօȶ քօաɛʀֆ ռօա",
                     url="t.me/{}?startgroup=true".format(context.bot.username),)],[
         InlineKeyboardButton(
                     text="🔥 DΣV GЯӨЦP",

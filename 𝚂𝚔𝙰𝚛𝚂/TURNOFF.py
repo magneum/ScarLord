@@ -322,14 +322,14 @@ if is_module_loaded(FILENAME):
     dispatcher.add_handler(TOGGLE_HANDLER)
 
     __help__ = f"""{ALKL}
-   🦀 •/cmds-\n check the current status of disabled commands
+   ⚔️ •/cmds-\n check the current status of disabled commands
 
     *Admins only*-\n
-   🦀 •/enable <cmd name>-\n enable that command
-   🦀 •/disable <cmd name>-\n disable that command
-   🦀 •/enablemodule <module name>-\n enable all commands in that module
-   🦀 •/disablemodule <module name>-\n disable all commands in that module
-   🦀 •/listcmds-\n list all possible toggleable commands
+   ⚔️ •/enable <cmd name>-\n enable that command
+   ⚔️ •/disable <cmd name>-\n disable that command
+   ⚔️ •/enablemodule <module name>-\n enable all commands in that module
+   ⚔️ •/disablemodule <module name>-\n disable all commands in that module
+   ⚔️ •/listcmds-\n list all possible toggleable commands
     """
 
     

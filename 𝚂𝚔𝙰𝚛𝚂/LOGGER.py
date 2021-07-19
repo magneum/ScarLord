@@ -190,14 +190,14 @@ if is_module_loaded(FILENAME):
 
     __help__ = f"""{ALKL}
 *Admins only*-\n
-🦀 •/logchannel-\n get log channel info
-🦀 •/setlog-\n set the log channel.
-🦀 •/unsetlog-\n unset the log channel.
+⚔️ •/logchannel-\n get log channel info
+⚔️ •/setlog-\n set the log channel.
+⚔️ •/unsetlog-\n unset the log channel.
 
 Setting the log channel is done by:
-🦀 •adding the bot to the desired channel (as an admin!)
-🦀 •sending `/setlog` in the channel
-🦀 •forwarding the `/setlog` to the group
+⚔️ •adding the bot to the desired channel (as an admin!)
+⚔️ •sending `/setlog` in the channel
+⚔️ •forwarding the `/setlog` to the group
 """
 
     
