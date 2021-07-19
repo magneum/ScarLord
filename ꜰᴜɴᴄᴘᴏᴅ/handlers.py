@@ -2,7 +2,7 @@ import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.blacklistusers_sql as sql
 from SƈαɾLσɾԃ import ALLOW_EXCL
 from SƈαɾLσɾԃ import DEV_USERS, KLAW_LINGS
 
-from Import import *
+from IMPORTER import *
 if ALLOW_EXCL:
     CMD_STARTERS = ("/", "!")
 else:

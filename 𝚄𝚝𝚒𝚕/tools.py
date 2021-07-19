@@ -1,4 +1,4 @@
-from 𝙸𝚖𝚙𝚘𝚛𝚝𝚎𝚛 import *
+from IMPORTER import *
 
 
 async def md5(fname: str) -> str:
