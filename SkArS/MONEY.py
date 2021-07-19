@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import CASH_API_KEY, dispatcher
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete

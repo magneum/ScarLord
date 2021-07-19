@@ -1,9 +1,7 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,
-    is_user_admin,
     user_admin,
     user_admin_no_reply,
 )

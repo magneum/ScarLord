@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user

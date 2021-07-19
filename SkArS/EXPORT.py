@@ -1,5 +1,4 @@
-from Import import *
-from ᴍᴇᴍᴏɪʀᴇ import *
+from sideloader import *
 from SƈαɾLσɾԃ import LOGGER,dispatcher
 
 def migrate_chats(update: Update, context: CallbackContext):

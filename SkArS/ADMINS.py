@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import KLAW_LINGS, dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (

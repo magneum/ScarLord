@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher, LOGGER
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     bot_admin,

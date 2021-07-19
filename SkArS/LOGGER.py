@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from ꜰᴜɴᴄᴘᴏᴅ.misc import is_module_loaded
 
 __mod_name__ = "📓ʟᴏɢ ᴄʜᴀɴɴᴇʟ"

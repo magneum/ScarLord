@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.notes_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
 from SƈαɾLσɾԃ.__main__ import DATA_IMPORT

@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 import SkArS_HuV.feds_sql as sql
 from SƈαɾLσɾԃ import (
     EVENT_LOGS,

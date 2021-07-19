@@ -1,8 +1,7 @@
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher, LOGGER
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, can_delete
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
-from ᴍᴇᴍᴏɪʀᴇ import *
+
 
 __mod_name__ = "🧴 ᴘᴜʀɢᴇ"
 

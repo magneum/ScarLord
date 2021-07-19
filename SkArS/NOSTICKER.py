@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 import SkArS_HuV.blsticker_sql as sql
 from SƈαɾLσɾԃ import LOGGER, dispatcher
 from SkArS.CONNECT import connected

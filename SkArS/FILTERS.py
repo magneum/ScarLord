@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher, LOGGER, KLAW_LINGS
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker

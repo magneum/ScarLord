@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import LOGGER, KLAW_LINGS, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
 from SkArS.LOGGER import loggable

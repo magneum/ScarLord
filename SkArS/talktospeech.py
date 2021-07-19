@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler

@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from contextlib import redirect_stdout
 from SƈαɾLσɾԃ import LOGGER, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import owner_plus

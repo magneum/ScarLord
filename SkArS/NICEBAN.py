@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 import SkArS_HuV.global_bans_sql as sql
 from SkArS_HuV.users_sql import get_user_com_chats
 from SƈαɾLσɾԃ import (

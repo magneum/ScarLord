@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import CMD_STARTERS, SpamChecker
 from ꜰᴜɴᴄᴘᴏᴅ.misc import is_module_loaded

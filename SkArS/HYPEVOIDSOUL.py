@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 import SƈαɾLσɾԃ
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus

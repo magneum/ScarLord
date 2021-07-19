@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.locks_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, LOGGER
 from SkArS.TURNOFF import DisableAbleCommandHandler

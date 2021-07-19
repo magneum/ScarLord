@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.users_sql as sql
 from SƈαɾLσɾԃ import DEV_USERS, LOGGER, OWNER_ID, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus, sudo_plus
@@ -11,7 +10,6 @@ USERS_GROUP = 4
 CHAT_GROUP = 5
 DEV_AND_MORE = DEV_USERS.append(int(OWNER_ID))
 def get_user_id(username):
-    # ensure valid userid
     if len(username) <= 5:
         return None
 

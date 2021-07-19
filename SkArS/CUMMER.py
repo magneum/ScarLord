@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.welcome_sql as sql
 from SƈαɾLσɾԃ import DEV_USERS,LOGGER,OWNER_ID,sw,dispatcher,JOIN_LOGGER
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import is_user_ban_protected,user_admin

@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
 

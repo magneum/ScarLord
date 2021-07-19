@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import dispatcher, DEV_USERS, OWNER_ID
 
 class ErrorsDict(dict):

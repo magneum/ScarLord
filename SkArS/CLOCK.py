@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import TIME_API_KEY, dispatcher
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from SkArS_HuV.clear_cmd_sql import get_clearcmd

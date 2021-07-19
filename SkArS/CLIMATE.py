@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 from SƈαɾLσɾԃ import WEATHER_API, dispatcher
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
 from ꜰᴜɴᴄᴘᴏᴅ.misc import delete

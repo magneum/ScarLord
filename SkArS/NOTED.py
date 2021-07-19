@@ -1,8 +1,7 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.notes_sql as sql
 from SkArS_HuV.clear_cmd_sql import get_clearcmd
-from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, KLAW_LINGS
+from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, dispatcher, KLAW_LINGS
 from SkArS.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, connection_status

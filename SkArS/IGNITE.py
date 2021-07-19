@@ -1,6 +1,4 @@
-from Import import *
-from ᴍᴇᴍᴏɪʀᴇ import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 from SƈαɾLσɾԃ import LOGGER,dispatcher,StartTime,updater
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import is_user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.misc import paginate_modules

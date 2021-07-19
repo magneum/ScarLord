@@ -1,5 +1,5 @@
-from Import import *
-from SƈαɾLσɾԃ import OWNER_ID, dispatcher
+from sideloader import *
+from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus
 from SkArS_HuV.users_sql import get_user_com_chats

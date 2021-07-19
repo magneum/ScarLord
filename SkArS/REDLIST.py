@@ -1,5 +1,4 @@
-from Import import *
-from ꜱᴀʏᴏɴᴀʀᴀ import *
+from sideloader import *
 import SkArS_HuV.blacklist_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER
 from SkArS.TURNOFF import DisableAbleCommandHandler
