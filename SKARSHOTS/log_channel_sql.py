@@ -1,4 +1,4 @@
-from 𝚃𝚢𝚙𝚘 import *
+from TYPOS import *
 from IMPORTER import *
 from VASSE import *
 
