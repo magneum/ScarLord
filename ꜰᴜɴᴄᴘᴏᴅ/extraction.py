@@ -1,5 +1,5 @@
 from SƈαɾLσɾԃ import LOGGER
-from 𝚂𝚔𝙰𝚛𝚂.USERS import get_user_id
+from SKARS.USERS import get_user_id
 from sideloader import *
 
 def id_from_reply(message):
