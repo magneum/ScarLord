@@ -1,5 +1,5 @@
 from TYPOS import *
-from 𝙵𝚊𝚗𝚌𝚒 import *
+from FANCI import *
 from IMPORTER import *
 from VASSE import *
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import Types
