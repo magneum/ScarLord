@@ -1,5 +1,5 @@
 from SƈαɾLσɾԃ import LOGGER
-from SkArS.USERS import get_user_id
+from 𝚂𝚔𝙰𝚛𝚂.USERS import get_user_id
 from sideloader import *
 
 def id_from_reply(message):
@@ -76,7 +76,7 @@ def extract_user_and_text(
                 "to execute certain commands...)"
             )
         else:
-            LOGS.exception("Exception %s on user %s", excp.message, user_id)
+            LOGGER.exception("Exception %s on user %s", excp.message, user_id)
 
         return None, None
 
@@ -153,7 +153,7 @@ def extract_unt_fedban(
             )
             return None, None
         elif excp.message != "Chat not found":
-            LOGS.exception("Exception %s on user %s", excp.message, user_id)
+            LOGGER.exception("Exception %s on user %s", excp.message, user_id)
             return None, None
         elif not isinstance(user_id, int):
             return None, None
