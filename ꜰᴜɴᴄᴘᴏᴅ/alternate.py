@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 
 def send_message(message, text, *args, **kwargs):
     try:

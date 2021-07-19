@@ -1,5 +1,5 @@
 from SƈαɾLσɾԃ import DEV_USERS, KLAW_LINGS
-from Import import *
+from sideloader import *
 
 class CustomFilters(object):
     class _Sudoers(MessageFilter):

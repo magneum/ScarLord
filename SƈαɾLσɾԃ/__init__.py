@@ -1,5 +1,4 @@
-from Import import *
-from ᴋᴏɴꜰɪɢ import *
+from sideloader import *
 
 class InterceptHandler(logging.Handler):
     LEVELS_MAP = {

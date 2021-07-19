@@ -1,6 +1,6 @@
 from SƈαɾLσɾԃ import LOGGER
 from SkArS.USERS import get_user_id
-from Import import *
+from sideloader import *
 
 def id_from_reply(message):
     prev_message = message.reply_to_message

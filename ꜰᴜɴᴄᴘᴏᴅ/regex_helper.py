@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 
 def regex_searcher(regex_string, string):
     try:

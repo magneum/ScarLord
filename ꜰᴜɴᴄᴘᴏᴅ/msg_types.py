@@ -1,5 +1,5 @@
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import button_markdown_parser
-from Import import *
+from sideloader import *
 
 @unique
 class Types(IntEnum):

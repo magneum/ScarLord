@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 
 
 MATCH_MD = re.compile(

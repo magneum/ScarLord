@@ -1,4 +1,4 @@
-from Import import *
+from sideloader import *
 
 VERSION = "1.1.0"
 APIURL = "http://api.github.com/repos/"

@@ -6,8 +6,7 @@ from SƈαɾLσɾԃ import (
     SUPPORT_CHAT,
     dispatcher,
 )
-
-from Import import *
+from sideloader import *
 
 
 ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10, timer=perf_counter)

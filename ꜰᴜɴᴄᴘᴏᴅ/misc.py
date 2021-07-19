@@ -1,5 +1,5 @@
 from SƈαɾLσɾԃ import NO_LOAD
-from Import import *
+from sideloader import *
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
     def __eq__(self, other):
