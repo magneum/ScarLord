@@ -1,5 +1,5 @@
 import threading
-from SkArS_HuV import BASE, SESSION
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import BASE, SESSION
 from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
 
 

@@ -1,5 +1,5 @@
 from Import import *
-from SkArS_HuV import SESSION, BASE
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import SESSION, BASE
 from ᴍᴇᴍᴏɪʀᴇ import *
 
 class ChatAccessConnectionSettings(BASE):
