@@ -2,7 +2,7 @@ from sideloader import *
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.extraction import extract_user
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus
-from 𝚂𝚔𝙰𝚛𝚂_HuV.users_sql import get_user_com_chats
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.users_sql import get_user_com_chats
 
 
 

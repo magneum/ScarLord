@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.clear_cmd_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.clear_cmd_sql as sql
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, connection_status
 

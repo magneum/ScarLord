@@ -1,12 +1,12 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.welcome_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.welcome_sql as sql
 from SƈαɾLσɾԃ import DEV_USERS,LOGGER,OWNER_ID,sw,dispatcher,JOIN_LOGGER
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import is_user_ban_protected,user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.misc import build_keyboard, revert_buttons
 from ꜰᴜɴᴄᴘᴏᴅ.msg_types import get_welcome_type
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import escape_invalid_curly_brackets,markdown_parser
 from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂_HuV.global_bans_sql import is_user_gbanned
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.global_bans_sql import is_user_gbanned
 
 __mod_name__ = "📟 ᴡᴇʟᴄᴏᴍᴇ"
 

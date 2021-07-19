@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.blsticker_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.blsticker_sql as sql
 from SƈαɾLσɾԃ import LOGGER, dispatcher
 from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
 from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler

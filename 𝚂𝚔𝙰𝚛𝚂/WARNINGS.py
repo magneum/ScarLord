@@ -18,8 +18,8 @@ from ꜰᴜɴᴄᴘᴏᴅ.filters import CustomFilters
 from ꜰᴜɴᴄᴘᴏᴅ.misc import split_message
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import split_quotes
 from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂_HuV import warns_sql as sql
-from 𝚂𝚔𝙰𝚛𝚂_HuV.approve_sql import is_approved
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import warns_sql as sql
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.approve_sql import is_approved
 
 __mod_name__ = "🗯 ᴡᴀʀɴɪɴɢꜱ"
 

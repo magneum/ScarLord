@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.private_notes as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.private_notes as sql
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 

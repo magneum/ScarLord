@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.rules_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.rules_sql as sql
 from SƈαɾLσɾԃ import dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import markdown_parser

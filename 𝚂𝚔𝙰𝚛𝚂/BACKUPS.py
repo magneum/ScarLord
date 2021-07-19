@@ -1,13 +1,13 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.notes_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.notes_sql as sql
 from SƈαɾLσɾԃ import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
 from SƈαɾLσɾԃ.__main__ import DATA_IMPORT
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import typing_action
-import 𝚂𝚔𝙰𝚛𝚂_HuV.rules_sql as rulessql
-import 𝚂𝚔𝙰𝚛𝚂_HuV.blacklist_sql as blacklistsql
-from 𝚂𝚔𝙰𝚛𝚂_HuV import disable_sql as disabledsql
-import 𝚂𝚔𝙰𝚛𝚂_HuV.locks_sql as locksql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.rules_sql as rulessql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.blacklist_sql as blacklistsql
+from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import disable_sql as disabledsql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.locks_sql as locksql
 from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
 
 __mod_name__ = "✉️ ʙᴀᴄᴋᴜᴘꜱ"

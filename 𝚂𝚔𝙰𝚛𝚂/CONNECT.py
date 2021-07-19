@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂_HuV.connection_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.connection_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, DEV_USERS
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action

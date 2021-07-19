@@ -1,4 +1,4 @@
-import SkArS_HuV.blacklistusers_sql as sql
+import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.blacklistusers_sql as sql
 from SƈαɾLσɾԃ import ALLOW_EXCL
 from SƈαɾLσɾԃ import DEV_USERS, KLAW_LINGS
 
