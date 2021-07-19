@@ -1,5 +1,5 @@
 import threading
-KLAWNESS = """—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—
+KLAWNESS = """—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—
 
 GoodSir/Ma'am `{}` 
 
@@ -9,14 +9,14 @@ GoodSir/Ma'am `{}`
  
  🦞DΣV MΣПƬIӨП:💻 {}
  
-—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—"""
-KLAW_MORE = """—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—
+—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"""
+KLAW_MORE = """—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—
 
 Here Are All the information buttons you will ever need.
  
  🦞DΣV MΣПƬIӨП:
 💻 @hypevoidsoul | @hypevoidbot  
-—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—"""
+—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"""
 SƈαɾLσɾԃ_IMG = "https://telegra.ph/file/db6ac942f61ad65202405.mp4"
 DEF_COUNT = 1
 DEF_LIMIT = 0
@@ -95,4 +95,4 @@ WELC_BTN_LOCK = threading.RLock()
 LEAVE_BTN_LOCK = threading.RLock()
 WM_LOCK = threading.RLock()
 CS_LOCK = threading.RLock()
-IGNIT_KLAW = "—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—\n\nThis Group has now been added as a verified @HypeVoids ӄʟǟա🦀ʀօɮօȶ fueled group.<b>Haven't slept since:</b> <code>{}</code>\n\n—🔥••÷[  ӄʟǟա🦀ʀօɮօȶ  ]÷••🔥—"
+IGNIT_KLAW = "—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—\n\nThis Group has now been added as a verified @HypeVoids ӄʟǟա🦀ʀօɮօȶ fueled group.<b>Haven't slept since:</b> <code>{}</code>\n\n—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"
