@@ -1,8 +1,8 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.users_sql as sql
+import SKARSHOTS.users_sql as sql
 from SƈαɾLσɾԃ import DEV_USERS, LOGGER, OWNER_ID, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import dev_plus, sudo_plus
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.users_sql import get_all_users
+from SKARSHOTS.users_sql import get_all_users
 
 __mod_name__ = "👨‍👨‍👦 ᴜꜱᴇʀꜱ"
 

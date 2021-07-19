@@ -13,8 +13,8 @@ from ꜰᴜɴᴄᴘᴏᴅ.string_handling import (
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.clear_cmd_sql import get_clearcmd
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import cust_filters_sql as sql
+from SKARSHOTS.clear_cmd_sql import get_clearcmd
+from SKARSHOTS import cust_filters_sql as sql
 from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 

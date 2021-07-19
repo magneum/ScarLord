@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.locks_sql as sql
+import SKARSHOTS.locks_sql as sql
 from SƈαɾLσɾԃ import dispatcher, KLAW_LINGS, LOGGER
 from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
@@ -11,7 +11,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
 )
 from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
 from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.approve_sql import is_approved
+from SKARSHOTS.approve_sql import is_approved
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message, typing_action
 
 __mod_name__ = "🔐 ʟᴏᴄᴋꜱ"

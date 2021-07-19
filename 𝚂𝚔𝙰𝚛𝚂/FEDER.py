@@ -1,5 +1,5 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.feds_sql as sql
+import SKARSHOTS.feds_sql as sql
 from SƈαɾLσɾԃ import (
     EVENT_LOGS,
     LOGGER,
@@ -161,7 +161,7 @@ def rename_fed(update: Update, context: CallbackContext):
     verify_fed = sql.get_fed_info(fed_id)
 
     if not verify_fed:
-        return msg.reply_text("This fed does not exist in my 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃!")
+        return msg.reply_text("This fed does not exist in my SKARSHOTS!")
 
     if is_user_fed_owner(fed_id, user.id):
         sql.rename_fed(fed_id, user.id, newname)

@@ -1,6 +1,6 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.global_bans_sql as sql
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.users_sql import get_user_com_chats
+import SKARSHOTS.global_bans_sql as sql
+from SKARSHOTS.users_sql import get_user_com_chats
 from SƈαɾLσɾԃ import (
     DEV_USERS,
     EVENT_LOGS,

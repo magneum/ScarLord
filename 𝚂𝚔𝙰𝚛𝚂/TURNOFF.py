@@ -15,7 +15,7 @@ if is_module_loaded(FILENAME):
         is_user_admin,
         user_admin,
     )
-    from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import disable_sql as sql
+    from SKARSHOTS import disable_sql as sql
     from telegram.ext.dispatcher import run_async
 
     DISABLE_CMDS = []

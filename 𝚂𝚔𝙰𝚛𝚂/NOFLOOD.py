@@ -6,11 +6,11 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     user_admin_no_reply,
 )
 from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import antiflood_sql as sql
+from SKARSHOTS import antiflood_sql as sql
 from ꜰᴜɴᴄᴘᴏᴅ.string_handling import extract_time
 from 𝚂𝚔𝙰𝚛𝚂.CONNECT import connected
 from ꜰᴜɴᴄᴘᴏᴅ.alternate import send_message
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.approve_sql import is_approved
+from SKARSHOTS.approve_sql import is_approved
 
 __mod_name__ = "🌡 ᴀɴᴛɪꜰʟᴏᴏᴅ"
 

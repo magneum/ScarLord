@@ -1,6 +1,6 @@
 from sideloader import *
-import 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.notes_sql as sql
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃.clear_cmd_sql import get_clearcmd
+import SKARSHOTS.notes_sql as sql
+from SKARSHOTS.clear_cmd_sql import get_clearcmd
 from SƈαɾLσɾԃ import LOGGER, JOIN_LOGGER, dispatcher, KLAW_LINGS
 from 𝚂𝚔𝙰𝚛𝚂.TURNOFF import DisableAbleCommandHandler
 from ꜰᴜɴᴄᴘᴏᴅ.handlers import MessageHandlerChecker

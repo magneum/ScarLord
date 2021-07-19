@@ -7,7 +7,7 @@ from ꜰᴜɴᴄᴘᴏᴅ.chat_status import (
     dev_plus,
     user_admin,
 )
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import cleaner_sql as sql
+from SKARSHOTS import cleaner_sql as sql
 
 __mod_name__ = "⌨️ ʙʟᴜᴇᴛᴇxᴛ"
 

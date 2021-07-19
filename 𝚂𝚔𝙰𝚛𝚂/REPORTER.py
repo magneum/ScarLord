@@ -2,7 +2,7 @@ from sideloader import *
 from SƈαɾLσɾԃ import LOGGER, KLAW_LINGS, dispatcher
 from ꜰᴜɴᴄᴘᴏᴅ.chat_status import user_admin, user_not_admin
 from 𝚂𝚔𝙰𝚛𝚂.LOGGER import loggable
-from 𝚂𝚔𝙰𝚛𝚂𝚑𝚘𝚃 import reporting_sql as sql
+from SKARSHOTS import reporting_sql as sql
 
 __mod_name__ = "⚔️ ʀᴇᴘᴏʀᴛꜱ"
 
