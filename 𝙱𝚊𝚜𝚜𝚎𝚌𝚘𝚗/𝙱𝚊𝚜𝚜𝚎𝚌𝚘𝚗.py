@@ -1,4 +1,4 @@
-from Import import *
+from IMPORTER import *
 from SƈαɾLσɾԃ import DB_URI
 
 def start() -> scoped_session:
