@@ -47,9 +47,9 @@ def broadcast(update: Update, context: CallbackContext):
     if len(to_send) >= 2:
         to_group = False
         to_user = False
-        if to_send[0] == "/broadcastgroups":
+        if to_send[0] == "/bcg":
             to_group = True
-        if to_send[0] == "/broadcastusers":
+        if to_send[0] == "/bcu":
             to_user = True
         else:
             to_group = to_user = True
@@ -140,8 +140,6 @@ def chat_checker(update: Update, context: CallbackContext):
 
 
 def __user_info__(user_id):
-    if user_id in [777000, 1087968824]:
-        return """Groups count: <code>???</code>"""
     if user_id == dispatcher.bot.id:
         return """Groups count: <code>???</code>"""
     num_chats = sql.get_user_num_chats(user_id)
@@ -160,11 +158,17 @@ def __migrate__(old_chat_id, new_chat_id):
     sql.migrate_chat(old_chat_id, new_chat_id)
 
 
-__help__ = f"""{ALKL} wait"""
+USERS = USERS = __help__ = f"""{ALKL} 
+Hey @HypeVoids devs, Want to broadcast a message to all users who uses *SƈαɾLσɾԃ*?
+This module will be helpful!
 
-BROADCAST_WORK = CommandHandler(
-    ["broadcastall", "broadcastusers", "broadcastgroups"], broadcast, run_async=True
-)
+⚔️ •/bcg:
+    brodcast in groups.
+⚔️ •/bcu:
+    brodcast to users.
+"""
+
+BROADCAST_WORK = CommandHandler(["broadcastall", "bcu", "bcg"], broadcast, run_async=True)
 USER_WORK = MessageHandler(Filters.all & Filters.chat_type.groups, log_user, run_async=True)
 CHAT_CHECKER_WORK = MessageHandler(Filters.all & Filters.chat_type.groups, chat_checker, run_async=True)
 CHATLIST_WORK = CommandHandler(["groups", "chatlist"], chats, run_async=True)

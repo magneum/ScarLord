@@ -1,23 +1,5 @@
 import threading
-KLAWNESS = """—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—
-
-GoodSir/Ma'am `{}` 
-
-🔺𝘛𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘎𝘳𝘰𝘶𝘱 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 𝘣𝘰𝘵 𝘵𝘩𝘢𝘵 𝘸𝘢𝘴 𝘮𝘢𝘥𝘦 𝘸𝘪𝘵𝘩 𝘵𝘩𝘦 𝘴𝘰𝘶𝘭 𝘱𝘶𝘳𝘱𝘰𝘴𝘦 𝘰𝘧 𝘮𝘢𝘬𝘪𝘯𝘨 𝘢𝘯𝘺 𝘨𝘳𝘰𝘶𝘱 𝘸𝘰𝘳𝘬 𝘴𝘮𝘰𝘰𝘵𝘩𝘭𝘺 𝘢𝘯𝘥 𝘱𝘦𝘳𝘧𝘦𝘤𝘵𝘭𝘺.
-🔺𝘔𝘶𝘤𝘩 𝘭𝘪𝘬𝘦 𝘮𝘺 𝘚𝘪𝘣𝘭𝘪𝘯𝘨 𝘣𝘰𝘵 [@hypevoidlab].
-🔺`𝘚𝘪𝘮𝘱𝘭𝘺 𝘱𝘳𝘦𝘴𝘴 𝘰𝘯` /help `𝘪𝘯 𝘱𝘳𝘪𝘷𝘢𝘵𝘦 𝘢𝘯𝘥 𝘺𝘰𝘶 𝘢𝘳𝘦 𝘨𝘰𝘰𝘥 𝘵𝘰 𝘨𝘰.`
- 
- 🦞DΣV MΣПƬIӨП:💻 {}
- 
-—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"""
-KLAW_MORE = """—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—
-
-Here Are All the information buttons you will ever need.
- 
- 🦞DΣV MΣПƬIӨП:
-💻 @hypevoidsoul | @hypevoidbot  
-—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"""
-SƈαɾLσɾԃ_IMG = "https://telegra.ph/file/db6ac942f61ad65202405.mp4"
+from .on import *
 DEF_COUNT = 1
 DEF_LIMIT = 0
 DEF_OBJ = (None, DEF_COUNT, DEF_LIMIT)
@@ -95,4 +77,3 @@ WELC_BTN_LOCK = threading.RLock()
 LEAVE_BTN_LOCK = threading.RLock()
 WM_LOCK = threading.RLock()
 CS_LOCK = threading.RLock()
-IGNIT_KLAW = "—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—\n\nThis Group has now been added as a verified @HypeVoids ӄʟǟա🦀ʀօɮօȶ fueled group.<b>Haven't slept since:</b> <code>{}</code>\n\n—✨••÷[  SƈαɾLσɾԃ⚔️  ]÷••✨—"
