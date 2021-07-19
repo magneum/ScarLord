@@ -9,8 +9,9 @@ TTS = TTS =__help__ = f"""{ALKL}
 This is a module made to convert any english text to speech.
 Try it with funny words lol!
 
-⚔️ •/talk <text>:
-    convert text to speech"""
+⚔️ •/talk | /speak | /tts | /t <text>:
+    convert text to speech  
+"""
 
 US = f"""{ALKL}
 Sent via :@HVScarlordBot
@@ -43,18 +44,20 @@ def talk(update: Update, context: CallbackContext):
             lang = "en"
             talk = gTTS(delmsg, lang)
             talk.save("HypeVoidSoulTalks.mp3")
-        with open("HypeVoidSoulTalks.mp3", "rb") as music:
-            delmsg = update.message.reply_voice(music, caption=US,quote=False)
+        music = open(
+        "HypeVoidSoulTalks.mp3",
+        "rb")
+        delmsg = update.message.reply_voice(music, caption=US,quote=False)
         os.remove("HypeVoidSoulTalks.mp3")
     else:
         delmsg = message.reply_text(
-        f"""{ALKL}Reply a message or give something like\n⚔️ •/talk:<message>""",
+        f"""{ALKL}Reply a message or give something like\n⚔️ •/talk | /speak | /tts | /t <text>:""",
         parse_mode = ParseMode.MARKDOWN)
     cleartime = get_clearcmd(chat.id, "talk")
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 
-TTS_WORK = DisableAbleCommandHandler("talk", talk, run_async=True)
+TTS_WORK = DisableAbleCommandHandler(["talk", "speak", "tts", "t"], talk, run_async=True)
 __handlers__ = [TTS_WORK]
 dispatcher.add_handler(TTS_WORK)
