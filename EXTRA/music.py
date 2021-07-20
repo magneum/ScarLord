@@ -1,23 +1,29 @@
 from __future__ import unicode_literals
-
 import os
+from pyrogram import Client
 from asyncio import get_running_loop
 from functools import partial
 from random import randint
 from urllib.parse import urlparse
-
+app = Client(
+    "wbb", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH
+)
 import aiofiles
 import aiohttp
 import ffmpeg
 import youtube_dl
 from pyrogram import filters
+from Python_ARQ import ARQ
+from aiohttp import ClientSession
+session = aiohttpsession = ClientSession()
 
-from wbb import app, arq
-from wbb.utils.http import get
-from wbb.utils.pastebin import paste
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
+from 𝚄𝚝𝚒𝚕.http import get
+from 𝚄𝚝𝚒𝚕.pastebin import paste
 
 __MODULE__ = "Music"
-__HELP__ = """/ytmusic [link] To Download Music From Various Websites Including Youtube. [SUDOERS]
+__HELP__ = """/ytmusic [link] To Download Music From Various Websites Including Youtube. [KLAW_LIINGS]
 /saavn [query] To Download Music From Saavn.
 /deezer [query] To Download Music From Deezer.
 /lyrics [query] To Get Lyrics Of A Song."""

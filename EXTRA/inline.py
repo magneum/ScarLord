@@ -1,8 +1,6 @@
-
 import traceback
-
-from wbb import app
-from wbb.utils.inlinefuncs import *
+from pyrogram import Client
+from 𝚄𝚝𝚒𝚕.inlinefuncs import *
 
 __MODULE__ = "Inline"
 __HELP__ = """See inline for help related to inline"""
@@ -220,26 +218,6 @@ async def inline_query_handler(client, query):
             user_id = query.from_user.id
             victim = text.split()[1]
             answerss = await pmpermit_func(answers, user_id, victim)
-            await client.answer_inline_query(
-                query.id, results=answerss, cache_time=2
-            )
-
-        elif text.split()[0] == "ping":
-            answerss = await ping_func(answers)
-            await client.answer_inline_query(
-                query.id, results=answerss, cache_time=2
-            )
-
-        elif text.split()[0] == "ytmusic":
-            if len(text.split()) < 2:
-                return await client.answer_inline_query(
-                    query.id,
-                    results=answers,
-                    switch_pm_text="YT Music | ytmusic [url]",
-                    switch_pm_parameter="inline",
-                )
-            tex = query.query.split(None, 1)[1].strip()
-            answerss = await yt_music_func(answers, tex)
             await client.answer_inline_query(
                 query.id, results=answerss, cache_time=2
             )

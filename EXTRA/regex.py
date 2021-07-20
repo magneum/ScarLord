@@ -1,9 +1,11 @@
 import re
 import sre_constants
-
+from pyrogram import Client
 from pyrogram import filters
 
-from wbb import app
+app = Client(
+    "wbb", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH
+)
 from wbb.utils.filter_groups import regex_group
 
 __MODULE__ = "Sed"
