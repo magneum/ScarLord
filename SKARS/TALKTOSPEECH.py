@@ -31,24 +31,20 @@ def talk(update: Update, context: CallbackContext):
         update.message.chat.send_action(ChatAction.RECORD_AUDIO)
         lang = "ml"
         talk = gTTS(delmsg, lang)
-        talk.save("HypeVoidSoulTalks.mp3")
-        with open("HypeVoidSoulTalks.mp3", "rb") as f:
-            linelist = list(f)
-            linecount = len(linelist)
+        talk.save("HVSTTS.mp3")
+        musicraw = open("HVSTTS.mp3", "rb")
+        linelist = list(musicraw)
+        linecount = len(linelist)
         if linecount == 1:
             update.message.chat.send_action(ChatAction.RECORD_AUDIO)
-            message.reply_text(
-            "✨Please Wait...\nMight take few seconds due to heavy usage of this module.",
-            parse_mode = ParseMode.MARKDOWN)
-            asyncio.sleep(2)
             lang = "en"
             talk = gTTS(delmsg, lang)
-            talk.save("HypeVoidSoulTalks.mp3")
+            talk.save("HVSTTS.mp3")
         music = open(
-        "HypeVoidSoulTalks.mp3",
+        "HVSTTS.mp3",
         "rb")
         delmsg = update.message.reply_voice(music, caption=US,quote=False)
-        os.remove("HypeVoidSoulTalks.mp3")
+        os.remove("HVSTTS.mp3")
     else:
         delmsg = message.reply_text(
         f"""{ALKL}Reply a message or give something like\n⚔️ •/talk | /speak | /tts | /t <text>:""",
@@ -57,6 +53,43 @@ def talk(update: Update, context: CallbackContext):
     if cleartime:
         context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
+
+
+def talk(update: Update, context: CallbackContext):
+    args = context.args
+    message = update.effective_message
+    chat = update.effective_chat
+    delmsg = ""
+
+    if message.reply_to_message:
+        delmsg = message.reply_to_message.text
+
+    if args:
+        delmsg = "  ".join(args).lower()
+        update.message.chat.send_action(ChatAction.RECORD_AUDIO)
+        lang = "ml"
+        talk = gTTS(delmsg, lang)
+        talk.save("HVSTTS.mp3")
+        musicraw = open("HVSTTS.mp3", "rb")
+        linelist = list(musicraw)
+        linecount = len(linelist)
+        if linecount == 1:
+            update.message.chat.send_action(ChatAction.RECORD_AUDIO)
+            lang = "hd"
+            talk = gTTS(delmsg, lang)
+            talk.save("HVSTTS.mp3")
+        music = open(
+        "HVSTTS.mp3",
+        "rb")
+        delmsg = update.message.reply_voice(music, caption=US,quote=False)
+        os.remove("HVSTTS.mp3")
+    else:
+        delmsg = message.reply_text(
+        f"""{ALKL}Reply a message or give something like\n⚔️ •/talk | /speak | /tts | /t <text>:""",
+        parse_mode = ParseMode.MARKDOWN)
+    cleartime = get_clearcmd(chat.id, "talk")
+    if cleartime:
+        context.dispatcher.run_async(delete, delmsg, cleartime.time)
 
 TTS_WORK = DisableAbleCommandHandler(["talk", "speak", "tts", "t"], talk, run_async=True)
 __handlers__ = [TTS_WORK]
